@@ -1,0 +1,44 @@
+template_id: T-EH-05
+name: Entrepreneur's AI Governance Starter Pack
+version: 0.1.0-draft
+risk_tier: Medium
+dgaf_patterns: [P-34, P-01]
+nist_rmf_functions: [GOVERN, MAP, MEASURE, MANAGE]
+node_count_target: "9"
+value_proposition: "Entry point for enterprise buyers — positions as consulting pre-funnel."
+
+nodes:
+  - id: n1
+    name: Input - Company Name, Use Cases, Deployment Context
+    type: input
+  - id: n2
+    name: Risk Tier Classifier
+    type: classifier
+  - id: n3
+    name: Governance Spec Generator
+    type: llm_transform
+    extends: "Define AI Governance Spec template"
+  - id: n4
+    name: Evaluation Checklist Builder
+    type: llm_transform
+  - id: n5
+    name: Risk Register Initializer
+    type: document_generator
+  - id: n6
+    name: NIST AI RMF Lite Mapper
+    type: compliance
+  - id: n7
+    name: COLLEEN Audit Log
+    type: audit_log
+    log_owner: COLLEEN
+  - id: n8
+    name: Governance Pack Doc Generator
+    type: output_artifact
+    formats: [pdf, markdown]
+  - id: n9
+    name: Output - Governance Starter Pack
+    type: output
+
+status: draft
+created: "2026-06-16"
+policy_id: P-34

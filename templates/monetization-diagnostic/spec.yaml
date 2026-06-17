@@ -1,0 +1,41 @@
+template_id: T-EH-03
+name: Monetization Diagnostic for AI Tools
+version: 0.1.0-draft
+risk_tier: Low
+dgaf_patterns: [P-34]
+nist_rmf_functions: [MAP, MEASURE]
+node_count_target: "7"
+value_proposition: "Replicates manual portfolio monetization analysis — productized."
+
+nodes:
+  - id: n1
+    name: Input - Portfolio Metrics JSON (views, runs, revenue)
+    type: input
+    schema:
+      views: integer
+      runs: integer
+      revenue_usd: float
+      template_ids: array
+  - id: n2
+    name: Funnel Analysis
+    type: analytics
+  - id: n3
+    name: Pricing Tier Gap Detector
+    type: llm_analysis
+  - id: n4
+    name: CTA Coverage Auditor
+    type: llm_analysis
+  - id: n5
+    name: Revenue Diversification Scorer
+    type: scorer
+  - id: n6
+    name: Monetization Health Report Generator
+    type: llm_transform
+  - id: n7
+    name: Priority Action Stack (ranked)
+    type: output_artifact
+    reviewer: Amethyst
+
+status: draft
+created: "2026-06-16"
+policy_id: P-34

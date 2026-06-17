@@ -1,0 +1,44 @@
+template_id: T-EH-01
+name: AI Product Launch Readiness Checker
+version: 0.1.0-draft
+risk_tier: Medium
+dgaf_patterns: [P-01, P-10, P-34]
+nist_rmf_functions: [GOVERN, MAP, MEASURE]
+node_count_target: "8-10"
+value_proposition: "Saves 4-6 hours of manual pre-launch governance review per release cycle."
+
+nodes:
+  - id: n1
+    name: Input - Product Brief JSON
+    type: input
+  - id: n2
+    name: Governance Doc Check
+    type: gate
+    gate_owner: COLLEEN
+  - id: n3
+    name: Eval Coverage Assessment
+    type: gate
+    gate_owner: Amethyst
+  - id: n4
+    name: Hallucination Risk Scorer
+    type: llm_eval
+    feed_from: wfl_llm_eval
+  - id: n5
+    name: NIST RMF Baseline Mapper
+    type: compliance
+  - id: n6
+    name: Launch Gate
+    type: router
+    outputs: [pass, hold, reject]
+    pattern: Curvature
+  - id: n7
+    name: Launch Readiness Card Generator
+    type: output_artifact
+  - id: n8
+    name: Google Sheets Log
+    type: audit_log
+    log_owner: COLLEEN
+
+status: draft
+created: "2026-06-16"
+policy_id: P-34

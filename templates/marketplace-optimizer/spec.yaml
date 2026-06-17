@@ -1,0 +1,37 @@
+template_id: T-EH-02
+name: AI Template Marketplace Optimizer
+version: 0.1.0-draft
+risk_tier: Low
+dgaf_patterns: [P-34]
+nist_rmf_functions: [MAP]
+node_count_target: "6-8"
+value_proposition: "Directly addresses the view-to-conversion gap in the Partner Hub."
+
+nodes:
+  - id: n1
+    name: Input - Template Name, Current Description, Use Case
+    type: input
+  - id: n2
+    name: SEO / Keyword Expansion
+    type: llm_transform
+  - id: n3
+    name: Tag Generator (marketplace-aligned)
+    type: llm_transform
+  - id: n4
+    name: Description Rewriter - clarity + conversion
+    type: llm_transform
+  - id: n5
+    name: A/B Variant Generator
+    type: llm_transform
+    output_count: 2
+  - id: n6
+    name: Quality Check Gate
+    type: gate
+    gate_owner: COLLEEN
+  - id: n7
+    name: Output - Optimized Listing Card
+    type: output_artifact
+
+status: draft
+created: "2026-06-16"
+policy_id: P-34

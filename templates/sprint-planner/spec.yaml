@@ -1,0 +1,35 @@
+template_id: T-EH-04
+name: Solo AI Builder Sprint Planner
+version: 0.1.0-draft
+risk_tier: Low
+dgaf_patterns: [P-34, P-33]
+nist_rmf_functions: [GOVERN, MANAGE]
+node_count_target: "6"
+value_proposition: "Encodes DGAF + SWEEP methodology as a consumable for solo builders."
+
+nodes:
+  - id: n1
+    name: Input - Current Projects, Goals, Constraints
+    type: input
+  - id: n2
+    name: Priority Stack Generator
+    type: llm_transform
+  - id: n3
+    name: 30/60/90 Milestone Mapper
+    type: llm_transform
+  - id: n4
+    name: Risk Checkpoint Embedder
+    type: gate
+    gate_owner: COLLEEN
+  - id: n5
+    name: Governance Sweep Scheduler
+    type: scheduler
+    cadence_owner: Amethyst
+  - id: n6
+    name: Sprint Plan Doc Generator
+    type: output_artifact
+    outputs: [sprint_plan_md, sweep_schedule_md]
+
+status: draft
+created: "2026-06-16"
+policy_id: P-34
