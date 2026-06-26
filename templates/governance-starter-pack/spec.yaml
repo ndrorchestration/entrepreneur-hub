@@ -1,44 +1,66 @@
-template_id: T-EH-05
-name: Entrepreneur's AI Governance Starter Pack
-version: 0.1.0-draft
-risk_tier: Medium
-dgaf_patterns: [P-34, P-01]
-nist_rmf_functions: [GOVERN, MAP, MEASURE, MANAGE]
-node_count_target: "9"
-value_proposition: "Entry point for enterprise buyers — positions as consulting pre-funnel."
+# T-EH-05: Entrepreneur's AI Governance Starter Pack
+# PUBLISH FIRST — audience match to existing 11K governance-interested Needle views
+# Pattern ref: P-34 (Flywheel), DGAF Framework
 
-nodes:
-  - id: n1
-    name: Input - Company Name, Use Cases, Deployment Context
-    type: input
-  - id: n2
-    name: Risk Tier Classifier
-    type: classifier
-  - id: n3
-    name: Governance Spec Generator
-    type: llm_transform
-    extends: "Define AI Governance Spec template"
-  - id: n4
-    name: Evaluation Checklist Builder
-    type: llm_transform
-  - id: n5
-    name: Risk Register Initializer
-    type: document_generator
-  - id: n6
-    name: NIST AI RMF Lite Mapper
-    type: compliance
-  - id: n7
-    name: COLLEEN Audit Log
-    type: audit_log
-    log_owner: COLLEEN
-  - id: n8
-    name: Governance Pack Doc Generator
-    type: output_artifact
-    formats: [pdf, markdown]
-  - id: n9
-    name: Output - Governance Starter Pack
-    type: output
+id: T-EH-05
+title: "Entrepreneur's AI Governance Starter Pack"
+slug: ai-governance-starter-pack-entrepreneur
+version: "1.0.0"
+status: draft  # -> pending-publish -> live
+priority: P0   # Publish before all other T-EH templates
 
-status: draft
-created: "2026-06-16"
-policy_id: P-34
+audience:
+  primary: "AI builders, founders, solopreneurs already consuming governance content"
+  match_signal: "11K+ Needle views on existing governance workflows — same audience"
+  mismatch_warning: "T-EH-01 (product launch) targets a DIFFERENT audience not yet in the funnel — publish T-EH-05 first"
+
+description: |
+  A complete AI governance starter kit for entrepreneurs building AI-powered products or services.
+  Covers decision logging, agent oversight, ethical guardrails, and audit trail setup.
+  Built on the DGAF Framework — the same system powering 12 published Needle workflows.
+
+content_sections:
+  - id: overview
+    title: "What This Gives You"
+    bullets:
+      - "DGAF decision log template (Markdown + JSON schema)"
+      - "Agent role taxonomy (Orchestrator, Verifier, Executor, Monitor)"
+      - "5 governance anti-patterns with mitigations"
+      - "COLLEEN SWEEP checklist (weekly audit cadence)"
+      - "AUDIT_TRAIL schema v1.1 with funnel_source field"
+      - "Phase-gate governance model (Phase 0-5)"
+
+  - id: quick_start
+    title: "Quick Start (15 min)"
+    steps:
+      - "Copy AUDIT_TRAIL schema to your repo"
+      - "Define your agent roles using the taxonomy"
+      - "Run your first COLLEEN SWEEP using the checklist"
+      - "Log your first governance event"
+
+cta:
+  free_tier: "Download starter pack (this template)"
+  pro_upsell: "Need implementation? -> Enterprise Starter $199 — includes 1hr async consult"
+  pro_link: "https://github.com/ndrorchestration/entrepreneur-hub#enterprise-starter"
+  github_link: "https://github.com/ndrorchestration/entrepreneur-hub"
+  needle_cta_text: "Built with DGAF Framework — full AI governance toolkit for builders -> github.com/ndrorchestration/entrepreneur-hub"
+
+needle:
+  project: "Entrepreneur Hub"  # Phase 0 unlock — project must exist before publish
+  url: "(pending publish — update after Needle project created)"
+  category: "AI Governance"
+  tags: ["governance", "AI", "entrepreneur", "DGAF", "audit", "startup"]
+
+publish_checklist:
+  - "[ ] Needle project 'Entrepreneur Hub' exists"
+  - "[ ] spec.yaml content sections are complete"
+  - "[ ] needle_cta_text included at bottom of published template"
+  - "[ ] NEEDLE_TEMPLATE_INDEX updated with live URL"
+  - "[ ] SWEEP_LOG.md entry created for publish event"
+  - "[ ] AUDIT_TRAIL.md GOV event logged"
+  - "[ ] LinkedIn launch post published (see docs/LAUNCH_POST_LINKEDIN.md)"
+
+revenue_attribution:
+  tier: free-with-upsell
+  upsell_target: enterprise-starter-199
+  funnel_source: needle-template

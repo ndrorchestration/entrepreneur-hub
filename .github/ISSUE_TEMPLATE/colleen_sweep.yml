@@ -1,0 +1,32 @@
+name: COLLEEN SWEEP (Manual)
+description: Trigger a manual COLLEEN governance sweep outside the Wednesday cron
+title: "[COLLEEN] Manual SWEEP — "
+labels: ["colleen-sweep", "governance"]
+body:
+  - type: input
+    id: sweep_date
+    attributes:
+      label: Sweep Date
+      placeholder: "2026-06-26"
+    validations:
+      required: true
+  - type: dropdown
+    id: sweep_type
+    attributes:
+      label: Sweep Type
+      options:
+        - weekly-colleen
+        - phase-gate-check
+        - revenue-audit
+        - post-publish-verification
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Standard Checks
+      options:
+        - label: NEEDLE_TEMPLATE_INDEX stubs resolved?
+        - label: README CTAs live and linked?
+        - label: SWEEP_LOG.md updated?
+        - label: MONETIZATION_FLYWHEEL revenue figure current?

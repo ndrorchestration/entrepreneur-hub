@@ -1,41 +1,30 @@
-template_id: T-EH-03
-name: Monetization Diagnostic for AI Tools
-version: 0.1.0-draft
-risk_tier: Low
-dgaf_patterns: [P-34]
-nist_rmf_functions: [MAP, MEASURE]
-node_count_target: "7"
-value_proposition: "Replicates manual portfolio monetization analysis — productized."
-
-nodes:
-  - id: n1
-    name: Input - Portfolio Metrics JSON (views, runs, revenue)
-    type: input
-    schema:
-      views: integer
-      runs: integer
-      revenue_usd: float
-      template_ids: array
-  - id: n2
-    name: Funnel Analysis
-    type: analytics
-  - id: n3
-    name: Pricing Tier Gap Detector
-    type: llm_analysis
-  - id: n4
-    name: CTA Coverage Auditor
-    type: llm_analysis
-  - id: n5
-    name: Revenue Diversification Scorer
-    type: scorer
-  - id: n6
-    name: Monetization Health Report Generator
-    type: llm_transform
-  - id: n7
-    name: Priority Action Stack (ranked)
-    type: output_artifact
-    reviewer: Amethyst
-
+# T-EH-03: Monetization Diagnostic
+id: T-EH-03
+title: "AI Monetization Diagnostic"
+slug: ai-monetization-diagnostic
+version: "1.0.0"
 status: draft
-created: "2026-06-16"
-policy_id: P-34
+priority: P3
+
+audience:
+  primary: "Builders with existing products or content who are under-monetizing"
+  match_signal: "Direct audience match to the 11K views / $4.19 revenue scenario — meta-template"
+
+description: |
+  Diagnostic framework for identifying monetization breaks in AI product funnels.
+  Covers conversion rate analysis, packaging audit, CTA effectiveness, and revenue tier mapping.
+  Includes the 0.04% conversion rate pattern as a worked example.
+
+cta:
+  needle_cta_text: "Built with DGAF Framework — full AI governance toolkit for builders -> github.com/ndrorchestration/entrepreneur-hub"
+  pro_upsell: "Full monetization audit -> Enterprise Starter $199"
+
+needle:
+  project: "Entrepreneur Hub"
+  url: "(pending publish)"
+  tags: ["monetization", "conversion", "pricing", "revenue", "diagnostic"]
+
+publish_checklist:
+  - "[ ] T-EH-05 live"
+  - "[ ] needle_cta_text included"
+  - "[ ] NEEDLE_TEMPLATE_INDEX updated"

@@ -1,35 +1,28 @@
-template_id: T-EH-04
-name: Solo AI Builder Sprint Planner
-version: 0.1.0-draft
-risk_tier: Low
-dgaf_patterns: [P-34, P-33]
-nist_rmf_functions: [GOVERN, MANAGE]
-node_count_target: "6"
-value_proposition: "Encodes DGAF + SWEEP methodology as a consumable for solo builders."
-
-nodes:
-  - id: n1
-    name: Input - Current Projects, Goals, Constraints
-    type: input
-  - id: n2
-    name: Priority Stack Generator
-    type: llm_transform
-  - id: n3
-    name: 30/60/90 Milestone Mapper
-    type: llm_transform
-  - id: n4
-    name: Risk Checkpoint Embedder
-    type: gate
-    gate_owner: COLLEEN
-  - id: n5
-    name: Governance Sweep Scheduler
-    type: scheduler
-    cadence_owner: Amethyst
-  - id: n6
-    name: Sprint Plan Doc Generator
-    type: output_artifact
-    outputs: [sprint_plan_md, sweep_schedule_md]
-
+# T-EH-04: AI Sprint Planner
+id: T-EH-04
+title: "AI-Assisted Sprint Planner"
+slug: ai-sprint-planner-entrepreneur
+version: "1.0.0"
 status: draft
-created: "2026-06-16"
-policy_id: P-34
+priority: P4
+
+audience:
+  primary: "Solo founders and small AI teams running 1-2 week execution sprints"
+
+description: |
+  Sprint planning template optimized for solo AI builders. Includes backlog prioritization matrix,
+  daily check-in format, blocker escalation protocol, and DGAF-compatible decision log integration.
+
+cta:
+  needle_cta_text: "Built with DGAF Framework — full AI governance toolkit for builders -> github.com/ndrorchestration/entrepreneur-hub"
+  pro_upsell: "Sprint coaching session -> Enterprise Starter $199"
+
+needle:
+  project: "Entrepreneur Hub"
+  url: "(pending publish)"
+  tags: ["sprint", "planning", "solo-founder", "AI", "productivity"]
+
+publish_checklist:
+  - "[ ] T-EH-05 live"
+  - "[ ] needle_cta_text included"
+  - "[ ] NEEDLE_TEMPLATE_INDEX updated"
