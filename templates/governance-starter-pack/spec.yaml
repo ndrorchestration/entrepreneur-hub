@@ -6,8 +6,11 @@ id: T-EH-05
 title: "Entrepreneur's AI Governance Starter Pack"
 slug: ai-governance-starter-pack-entrepreneur
 version: "1.0.0"
-status: draft  # -> pending-publish -> live
+status: pending-publish  # updated from draft — content complete, awaiting Needle project creation
 priority: P0   # Publish before all other T-EH templates
+
+build_completed: "2026-06-26"
+build_commit: "pending"  # update after push
 
 audience:
   primary: "AI builders, founders, solopreneurs already consuming governance content"
@@ -19,24 +22,34 @@ description: |
   Covers decision logging, agent oversight, ethical guardrails, and audit trail setup.
   Built on the DGAF Framework — the same system powering 12 published Needle workflows.
 
+content_files:
+  - TEMPLATE.md          # Full Needle-publishable content body
+  - DECISION_LOG.md      # DGAF decision log template
+  - AGENT_ROLES.md       # Agent taxonomy (Orchestrator/Verifier/Executor/Monitor)
+  - COLLEEN_SWEEP_CHECKLIST.md  # Weekly audit cadence
+  - AUDIT_TRAIL_SCHEMA.json     # v1.1 schema with funnel_source field
+  - GOVERNANCE_ANTIPATTERNS.md  # 5 anti-patterns with trigger/mitigation
+
 content_sections:
   - id: overview
     title: "What This Gives You"
-    bullets:
-      - "DGAF decision log template (Markdown + JSON schema)"
-      - "Agent role taxonomy (Orchestrator, Verifier, Executor, Monitor)"
-      - "5 governance anti-patterns with mitigations"
-      - "COLLEEN SWEEP checklist (weekly audit cadence)"
-      - "AUDIT_TRAIL schema v1.1 with funnel_source field"
-      - "Phase-gate governance model (Phase 0-5)"
+    artifacts: 5
+    setup_time_minutes: 45
+    maintenance_time_weekly_minutes: 15
 
   - id: quick_start
     title: "Quick Start (15 min)"
-    steps:
-      - "Copy AUDIT_TRAIL schema to your repo"
-      - "Define your agent roles using the taxonomy"
-      - "Run your first COLLEEN SWEEP using the checklist"
-      - "Log your first governance event"
+    steps: 5
+
+  - id: framework
+    title: "DGAF Governance Model"
+    principles: 5
+    phase_gates: 6
+
+  - id: antipatterns
+    title: "5 Governance Anti-Patterns"
+    count: 5
+    includes_non_obvious: true
 
 cta:
   free_tier: "Download starter pack (this template)"
@@ -53,11 +66,12 @@ needle:
 
 publish_checklist:
   - "[ ] Needle project 'Entrepreneur Hub' exists"
-  - "[ ] spec.yaml content sections are complete"
-  - "[ ] needle_cta_text included at bottom of published template"
+  - "[x] spec.yaml content sections are complete"
+  - "[x] All content files built and committed"
+  - "[ ] needle_cta_text included at bottom of published Needle template"
   - "[ ] NEEDLE_TEMPLATE_INDEX updated with live URL"
   - "[ ] SWEEP_LOG.md entry created for publish event"
-  - "[ ] AUDIT_TRAIL.md GOV event logged"
+  - "[ ] AUDIT_TRAIL.md publish event logged"
   - "[ ] LinkedIn launch post published (see docs/LAUNCH_POST_LINKEDIN.md)"
 
 revenue_attribution:

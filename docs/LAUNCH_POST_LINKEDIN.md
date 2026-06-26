@@ -1,65 +1,57 @@
-# LinkedIn Launch Post — T-EH-05 + Enterprise Starter
-<!-- Target: +500 views, audience = AI architects / enterprise operators / founders -->
-<!-- Publish: After T-EH-05 is live on Needle AND Gumroad page is live -->
-<!-- Status: DRAFT — do not publish before both conditions are met -->
+# LinkedIn Launch Post — T-EH-05
+
+**Status:** draft — publish after Needle template goes live  
+**Target:** +500 views, governance/AI-builder audience  
+**CTA:** Needle template link → GitHub repo  
+**Pattern ref:** P-34 Flywheel (Loop A activation)
 
 ---
 
-## Post Draft v1 (Recommended — narrative, broader reach)
+## Post Draft
 
-```
-I've published 12 AI governance workflows on Needle.
-11,000+ views. $4.19 in revenue.
+---
+
+I've been publishing AI governance workflows on Needle for months. 11,000+ views. $4.19 in revenue.
 
 That's not a demand problem. That's a packaging problem.
 
-So I fixed it.
+Today I'm fixing it.
 
-Today I'm launching the Entrepreneur Hub — a structured toolkit for AI builders
-who want governance that's operational, not just documented.
+**Launching: Entrepreneur's AI Governance Starter Pack** — a free template pack for founders building AI-powered products who want to govern what they're building before it governs them.
 
-The first template is live: AI Governance Starter Pack
--> Decision logs, agent role taxonomy, audit trail schema, SWEEP cadence
--> Built on the DGAF Framework (the system behind all 12 workflows)
--> Free on Needle: [NEEDLE_URL]
+What's inside:
 
-If you want implementation help:
--> Enterprise Starter ($199) — full bundle + 1hr async consult
--> [GUMROAD_URL]
+→ Decision log template (every architectural call, dated, with alternatives rejected)  
+→ Agent role taxonomy (Orchestrator / Verifier / Executor / Monitor — nothing runs without a role)  
+→ Weekly SWEEP checklist (15 min/week to catch drift before it compounds)  
+→ Audit trail schema v1.1 (machine-readable, revenue-trackable)  
+→ 5 governance anti-patterns with non-obvious failure modes
 
-The gap between "AI governance docs" and "AI governance that runs"
-is usually one forcing function away.
+Built on the DGAF Framework — the same system I use to run my own AI publishing stack.
 
-This is it.
+Free to use. Enterprise implementation support available ($199 — 1hr async consult, you get a specific remediation plan for your repo).
 
-#AIGovernance #AIBuilder #Entrepreneur #DGAF #ProductLaunch
-```
+**→ [Link to Needle template]**
+
+Full ecosystem on GitHub: github.com/ndrorchestration/entrepreneur-hub
 
 ---
 
-## Post Draft v2 (Direct / High-signal audience)
-
-```
-11K views on AI governance templates. $4.19 revenue.
-
-The flywheel was built. The engine wasn't started.
-
-Starting it today:
--> AI Governance Starter Pack (free): [NEEDLE_URL]
--> Enterprise Starter — full bundle + async consult ($199): [GUMROAD_URL]
-
-Built on DGAF Framework. 12 published workflows. Now with a clear way to pay.
-
-#AIGovernance #Entrepreneur #DGAF
-```
+*If you're building with AI and not yet logging your governance decisions, the first missed decision you can't trace back will cost you more than the 45 minutes this takes to set up.*
 
 ---
 
-## Publish Checklist
-- [ ] T-EH-05 live on Needle — replace `[NEEDLE_URL]` with real URL
-- [ ] Gumroad Enterprise Starter live — replace `[GUMROAD_URL]` with real URL
-- [ ] Choose Draft v1 (narrative) or Draft v2 (direct)
-- [ ] Post on LinkedIn
-- [ ] Log publish event in AUDIT_TRAIL.md as GOV-EH-004
-- [ ] Monitor views at 24h, 72h, 7d — target: 500 views
-- [ ] Track GitHub referral traffic from LinkedIn in GitHub Insights
+## Post Notes
+
+- **Lead with the number:** 11K views / $4.19 revenue is arresting — it earns the scroll
+- **Audience:** Same governance-interested readers already hitting Needle templates. Don't target founders generally — target AI builders specifically
+- **CTA sequencing:** Free template first (low friction), then $199 (self-select). Don't lead with paid
+- **Timing:** Publish within 24hr of Needle template going live — maximum recency signal
+- **Hashtags:** #AIGovernance #Entrepreneurship #DGAF #BuildInPublic #AIFounders
+- **Expected outcome:** +500 Needle views in 7 days, ≥1 GitHub star, ≥1 Enterprise Starter inquiry
+
+## Blocked On
+
+- [ ] Needle template live (get URL)
+- [ ] Replace `[Link to Needle template]` with actual URL
+- [ ] Publish

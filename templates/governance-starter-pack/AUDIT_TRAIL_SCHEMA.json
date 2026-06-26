@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DGAF AUDIT_TRAIL Entry",
+  "description": "Schema v1.1 — T-EH-05 Governance Starter Pack",
+  "version": "1.1",
+  "type": "object",
+  "required": ["id", "date", "event_type", "description", "status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique event ID. Format: TYPE-NNN (e.g. GOV-001, REV-001, SWEEP-001)",
+      "pattern": "^[A-Z]+-[0-9]{3}$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date (YYYY-MM-DD)"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": ["governance", "revenue", "sweep", "publish", "phase-change", "incident"],
+      "description": "Category of event"
+    },
+    "description": {
+      "type": "string",
+      "description": "One-sentence human-readable description of what happened"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["open", "resolved", "deferred", "logged"],
+      "description": "Current status of the event"
+    },
+    "funnel_source": {
+      "type": ["string", "null"],
+      "enum": ["needle-template", "github-readme", "linkedin", "direct", "referral", null],
+      "description": "v1.1 field. Required on all revenue events. Tracks where the conversion originated."
+    },
+    "amount_usd": {
+      "type": ["number", "null"],
+      "description": "Revenue amount in USD. Required on all revenue events. Null for non-revenue events."
+    },
+    "tier": {
+      "type": ["string", "null"],
+      "enum": ["free", "enterprise-starter-199", "pro-bundle-499", "retainer-1500", null],
+      "description": "Revenue tier. Required on revenue events."
+    },
+    "phase": {
+      "type": ["string", "null"],
+      "description": "Active phase at time of event (e.g. Phase-1). Null if not phase-relevant."
+    },
+    "pattern_ref": {
+      "type": ["string", "null"],
+      "description": "DGAF pattern reference (e.g. P-34). Null if not applicable."
+    },
+    "agent": {
+      "type": ["string", "null"],
+      "description": "Agent responsible for this event (e.g. COLLEEN, Amethyst). Null if human-initiated."
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Optional free-text notes."
+    }
+  },
+  "examples": [
+    {
+      "id": "GOV-001",
+      "date": "2026-06-25",
+      "event_type": "governance",
+      "description": "Phase 0 formally closed; Phase 1 gate opened.",
+      "status": "logged",
+      "funnel_source": null,
+      "amount_usd": null,
+      "tier": null,
+      "phase": "Phase-0",
+      "pattern_ref": "P-34",
+      "agent": "Amethyst",
+      "notes": "Triggered by repo commit 3dbbc6e."
+    },
+    {
+      "id": "REV-001",
+      "date": "2026-MM-DD",
+      "event_type": "revenue",
+      "description": "First Enterprise Starter ($199) conversion.",
+      "status": "open",
+      "funnel_source": "needle-template",
+      "amount_usd": 199,
+      "tier": "enterprise-starter-199",
+      "phase": "Phase-1",
+      "pattern_ref": "P-34",
+      "agent": null,
+      "notes": "Target: this week."
+    }
+  ]
+}
