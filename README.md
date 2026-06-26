@@ -26,7 +26,6 @@ You get:
 
 → **[Open a consulting inquiry](https://github.com/ndrorchestration/entrepreneur-hub/issues/new?template=template-request.md)** or DM on [LinkedIn](https://www.linkedin.com/in/andrewhensel)
 
-> *This is the fastest path to value. No waitlist. Direct engagement.*
 
 ---
 
