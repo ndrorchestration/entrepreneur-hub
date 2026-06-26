@@ -1,30 +1,30 @@
-# T-EH-03: Monetization Diagnostic
 id: T-EH-03
-title: "AI Monetization Diagnostic"
-slug: ai-monetization-diagnostic
+title: "Monetization Diagnostic for AI Tools"
+slug: monetization-diagnostic-ai-tools
 version: "1.0.0"
-status: draft
+status: pending-publish
 priority: P3
+build_completed: "2026-06-26"
 
 audience:
-  primary: "Builders with existing products or content who are under-monetizing"
-  match_signal: "Direct audience match to the 11K views / $4.19 revenue scenario — meta-template"
+  primary: "AI tool creators with traffic but no revenue"
+  secondary: "Template creators on Needle/Gumroad diagnosing conversion failure"
 
 description: |
-  Diagnostic framework for identifying monetization breaks in AI product funnels.
-  Covers conversion rate analysis, packaging audit, CTA effectiveness, and revenue tier mapping.
-  Includes the 0.04% conversion rate pattern as a worked example.
+  Root-cause diagnostic for AI tool creators with traffic but no revenue.
+  Distinguishes demand gaps from packaging gaps from CTA gaps from tier mismatches.
+  Includes 7-day fix protocol and revenue math calculator.
 
-cta:
-  needle_cta_text: "Built with DGAF Framework — full AI governance toolkit for builders -> github.com/ndrorchestration/entrepreneur-hub"
-  pro_upsell: "Full monetization audit -> Enterprise Starter $199"
+content_files:
+  - TEMPLATE.md
 
 needle:
   project: "Entrepreneur Hub"
   url: "(pending publish)"
-  tags: ["monetization", "conversion", "pricing", "revenue", "diagnostic"]
+  category: "Monetization"
+  tags: ["monetization", "AI", "revenue", "conversion", "diagnostic", "startup"]
 
-publish_checklist:
-  - "[ ] T-EH-05 live"
-  - "[ ] needle_cta_text included"
-  - "[ ] NEEDLE_TEMPLATE_INDEX updated"
+revenue_attribution:
+  tier: free-with-upsell
+  upsell_target: enterprise-starter-199
+  funnel_source: needle-template

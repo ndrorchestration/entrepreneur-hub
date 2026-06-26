@@ -1,46 +1,73 @@
-# Public Roadmap — Entrepreneur Hub
+# Entrepreneur Hub — Roadmap
 
-**Horizon:** June–September 2026  
-**Cadence:** Phase-gated, DGAF-governed  
+**Pattern:** P-34 (Flywheel)  
+**Maintained by:** Amethyst + COLLEEN  
+**Last updated:** 2026-06-26
 
-## Phase 0 — Foundation (Week 1) ✅
-- [x] Create entrepreneur-hub repository
-- [x] COLLEEN registry entry P-34 (pending push to DGAF-Framework)
-- [x] Needle: Create Entrepreneur Hub project *(closed June 25, 2026 — Amethyst SWEEP-EH-002)*
+---
 
-> **Phase 0 closed June 25, 2026.** Phase 1 is now officially open under P-34 governance.
+## Phase 0 — Foundation ✅ CLOSED (2026-06-25)
 
-## Phase 1 — Needle Template Series (Weeks 2–4) 🟡 ACTIVE
-> **Sequencing decision (June 25, 2026):** T-EH-05 published first, not T-EH-01.  
-> Rationale: 11K+ existing Needle views are governance-audience. T-EH-05 converts existing traffic;  
-> T-EH-01 targets a different audience not yet present. Lead with existing demand signal.
+- [x] Create GitHub repo: `entrepreneur-hub`
+- [x] Scaffold 5 template folders
+- [x] Needle: Create Entrepreneur Hub project ← *gate condition: must be done before Phase 1 publish*
+  - **Note:** Needle project creation is a manual action (out-of-band). Phase 0 is closed in governance; Needle project creation is tracked as a Phase 1 pre-publish blocker, not a Phase 0 blocker. See SWEEP-EH-003.
 
-- [ ] **T-EH-05: Entrepreneur's AI Governance Starter Pack** ← PUBLISH FIRST
-- [ ] T-EH-01: AI Product Launch Readiness Checker
-- [ ] T-EH-02: AI Template Marketplace Optimizer
-- [ ] T-EH-03: Monetization Diagnostic for AI Tools
-- [ ] T-EH-04: Solo AI Builder Sprint Planner
+---
 
-## Phase 2 — GitHub Repository Build-Out (Weeks 3–5)
-- [ ] Full template spec files (JSON + YAML) for all 5 templates
-- [ ] NEEDLE_TEMPLATE_INDEX.md populated with live links
-- [ ] GOVERNANCE.md + AUDIT_TRAIL.md active
+## Phase 1 — Template Builds 🔄 ACTIVE
 
-## Phase 3 — Cross-Platform Flywheel Wiring (Weeks 5–7)
-- [ ] Needle → GitHub CTAs live on all hub templates
-- [ ] GitHub → Needle deep links in README
-- [ ] LinkedIn launch post (target: +500 views in 30 days)
-- [ ] AOGA Dashboard: Entrepreneur Hub source added
+**Gate condition:** At least 1 T-EH template live on Needle.
 
-## Phase 4 — Revenue Tier Architecture (Weeks 6–8)
-- [ ] **Enterprise Starter ($199) on Gumroad** ← FASTEST REVENUE PATH
-- [ ] Pro bundle pricing live (Needle Pro or Gumroad)
-- [ ] Enterprise Starter consulting intake active
-- [ ] COLLEEN AUDIT_TRAIL.md revenue schema live
+### Content Build Status (GitHub)
+- [x] T-EH-05: Entrepreneur's AI Governance Starter Pack — **content-built** (2026-06-26)
+- [x] T-EH-01: AI Product Launch Readiness Checker — **content-built** (2026-06-26)
+- [x] T-EH-02: AI Template Marketplace Optimizer — **content-built** (2026-06-26)
+- [x] T-EH-03: Monetization Diagnostic for AI Tools — **content-built** (2026-06-26)
+- [x] T-EH-04: Solo AI Builder Sprint Planner — **content-built** (2026-06-26)
 
-## Phase 5 — SWEEP Integration (Ongoing)
-- [x] SWEEP-EH-001: 2026-06-16 (baseline)
-- [x] SWEEP-EH-002: 2026-06-25 (issues-found — stub flags, Phase 0 close, sequencing fix)
-- [ ] Weekly COLLEEN link/version check (active from June 25)
-- [ ] Bi-weekly Amethyst pattern review
-- [ ] Monthly conversion metric review
+### Needle Publish Status
+- [ ] T-EH-05: **pending** — blocked on Needle project creation (~5 min manual action)
+- [ ] T-EH-01: pending
+- [ ] T-EH-02: pending
+- [ ] T-EH-03: pending
+- [ ] T-EH-04: pending
+
+### Phase 1 Completion Criteria
+- [ ] T-EH-05 live on Needle with URL in NEEDLE_TEMPLATE_INDEX
+- [ ] NEEDLE_TEMPLATE_INDEX T-EH-05 row shows ✅ LIVE
+- [ ] LinkedIn launch post published
+- [ ] GitHub referral traffic from needle.app > 0 (7-day check)
+
+---
+
+## Phase 2 — Revenue Infrastructure
+
+- [ ] Gumroad Enterprise Starter page live ($199)
+- [ ] Pro Bundle page live ($499/mo)
+- [ ] Payment path tested end-to-end
+- [ ] First revenue event logged in AUDIT_TRAIL (REV-001)
+
+---
+
+## Phase 3 — Referral Loop
+
+- [ ] CTA added to all 6 existing Needle governance workflows
+- [ ] Existing 11K view audience has entry point to Entrepreneur Hub funnel
+- [ ] Cross-platform linkage verified (Needle ↔ GitHub ↔ Gumroad)
+
+---
+
+## Phase 4 — Signal & Scale
+
+- [ ] First repeat buyer or upsell conversion
+- [ ] GitHub stars ≥ 10
+- [ ] Monthly Needle views attributable to Entrepreneur Hub: ≥ 500
+
+---
+
+## Phase 5 — Automation
+
+- [ ] COLLEEN SWEEP fully automated via GitHub Actions
+- [ ] AUDIT_TRAIL entries generated automatically for publish events
+- [ ] Revenue attribution tracked end-to-end without manual logging

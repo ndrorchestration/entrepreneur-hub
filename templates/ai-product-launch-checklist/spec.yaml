@@ -1,45 +1,30 @@
-# T-EH-01: AI Product Launch Checklist
-# PUBLISH SECOND — after T-EH-05 establishes the funnel
-# Targets a different audience than current governance views
-
 id: T-EH-01
-title: "AI Product Launch Checklist"
-slug: ai-product-launch-checklist
+title: "AI Product Launch Readiness Checker"
+slug: ai-product-launch-readiness-checker
 version: "1.0.0"
-status: draft
+status: pending-publish
 priority: P1  # Publish after T-EH-05
+build_completed: "2026-06-26"
 
 audience:
-  primary: "Founders and PMs launching AI-powered products"
-  match_signal: "Inbound from LinkedIn and GitHub, not from existing governance workflows"
-  publish_dependency: "T-EH-05 must be live first to establish Entrepreneur Hub funnel"
+  primary: "Founders, solo builders, small teams shipping AI-powered products"
+  publish_after: T-EH-05  # Audience mismatch with current 11K governance-focused viewers
 
 description: |
-  A 47-point pre-launch checklist for AI product teams covering technical readiness,
-  governance sign-off, GTM strategy, and post-launch monitoring.
+  A structured 47-checkpoint pre-launch audit for AI-powered products.
+  Covers product readiness, governance, distribution, conversion, metrics, and recovery.
+  Built on the DGAF Framework.
 
-content_sections:
-  - id: pre_launch
-    title: "Pre-Launch (T-30 to T-7)"
-    categories: ["Technical QA", "Governance review", "GTM prep", "Stakeholder alignment"]
-  - id: launch_day
-    title: "Launch Day (T-0)"
-    categories: ["Deploy checklist", "Monitoring setup", "Communication sequence"]
-  - id: post_launch
-    title: "Post-Launch (T+7 to T+30)"
-    categories: ["Metrics review", "User feedback loop", "Governance audit"]
-
-cta:
-  needle_cta_text: "Built with DGAF Framework — full AI governance toolkit for builders -> github.com/ndrorchestration/entrepreneur-hub"
-  pro_upsell: "Full launch advisory -> Enterprise Starter $199"
+content_files:
+  - TEMPLATE.md
 
 needle:
   project: "Entrepreneur Hub"
   url: "(pending publish)"
-  tags: ["product-launch", "AI", "checklist", "founder", "GTM"]
+  category: "AI Product"
+  tags: ["launch", "AI", "checklist", "startup", "product"]
 
-publish_checklist:
-  - "[ ] T-EH-05 is live on Needle"
-  - "[ ] needle_cta_text included"
-  - "[ ] NEEDLE_TEMPLATE_INDEX updated"
-  - "[ ] SWEEP_LOG.md entry created"
+revenue_attribution:
+  tier: free-with-upsell
+  upsell_target: enterprise-starter-199
+  funnel_source: needle-template

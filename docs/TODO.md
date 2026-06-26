@@ -1,105 +1,92 @@
-# Entrepreneur Hub — Master TODO
-<!-- COLLEEN: this is the authoritative task state. Update on every SWEEP. -->
-<!-- Last updated: 2026-06-26 by Amethyst (GOV-EH-002) -->
+# TODO — Entrepreneur Hub
 
-## Phase 0 — CLOSED
-*Closed: 2026-06-25*
-
-- [x] Initialize GitHub repo (`entrepreneur-hub`)
-- [x] Define revenue tier architecture ($0 -> $1,500/mo)
-- [x] Specify COLLEEN AUDIT_TRAIL revenue schema
-- [x] Scaffold 5 template folders
-- [x] Write ROADMAP, MONETIZATION_FLYWHEEL, NEEDLE_TEMPLATE_INDEX
-- [x] Rewrite README as conversion storefront
-- [x] Document flywheel structural breaks
-- [x] Create SWEEP_LOG.md (SWEEP-EH-002 entry)
-- [x] Create AUDIT_TRAIL.md (GOV-EH-001 entry)
-- [x] Add GitHub Actions SWEEP enforcer
-- [x] Create all 5 template spec.yaml files
-- [x] Write Gumroad product spec (docs/GUMROAD_PRODUCT_SPEC.md)
-- [x] Write LinkedIn launch post draft (docs/LAUNCH_POST_LINKEDIN.md)
-- [ ] **CREATE NEEDLE PROJECT "Entrepreneur Hub"** <- manual, 5-minute action, unblocks all Needle publishes
+**Last updated:** 2026-06-26 (SWEEP-EH-003)  
+**Owner:** Human operator + Amethyst  
+**Status key:** 🔴 BLOCKING · 🟡 HIGH · 🟢 DONE · ⬜ QUEUED
 
 ---
 
-## Phase 1 — IN PROGRESS
-*Officially opens after Needle project created*
+## 🔴 BLOCKING — Do These Now
 
-### P0: T-EH-05 — AI Governance Starter Pack (PUBLISH FIRST)
-- [ ] Needle project created (dependency)
-- [ ] Build full template content from spec.yaml sections
-- [ ] Publish to Needle under "Entrepreneur Hub" project
-- [ ] Add needle_cta_text to published template
-- [ ] Update NEEDLE_TEMPLATE_INDEX with live URL
-- [ ] **Update the 6 existing governance workflows on Needle with CTA pointing to this repo** <- highest-leverage action, 11K audience activation
-- [ ] Create Gumroad Enterprise Starter page (see docs/GUMROAD_PRODUCT_SPEC.md)
-- [ ] Update README Enterprise Starter CTA with Gumroad URL
-- [ ] Publish LinkedIn launch post (see docs/LAUNCH_POST_LINKEDIN.md)
-- [ ] Log GOV-EH-003 (Gumroad live) in AUDIT_TRAIL.md
-- [ ] Log GOV-EH-004 (LinkedIn post) in AUDIT_TRAIL.md
-
-### P1: T-EH-01 — AI Product Launch Checklist (PUBLISH SECOND)
-- [ ] T-EH-05 live (dependency)
-- [ ] Build content from spec.yaml
-- [ ] Publish to Needle
-- [ ] Update NEEDLE_TEMPLATE_INDEX
-
-### P2: T-EH-02 — Marketplace Optimizer
-- [ ] T-EH-05 + T-EH-01 live (dependencies)
-- [ ] Build content from spec.yaml
-- [ ] Publish to Needle
-- [ ] Update NEEDLE_TEMPLATE_INDEX
-
-### P3: T-EH-03 — Monetization Diagnostic
-- [ ] T-EH-05 live (dependency)
-- [ ] Build content from spec.yaml
-- [ ] Publish to Needle
-- [ ] Update NEEDLE_TEMPLATE_INDEX
-
-### P4: T-EH-04 — Sprint Planner
-- [ ] T-EH-05 live (dependency)
-- [ ] Build content from spec.yaml
-- [ ] Publish to Needle
-- [ ] Update NEEDLE_TEMPLATE_INDEX
+### 1. Create Needle Project "Entrepreneur Hub"
+**Time:** ~5 min  
+**Who:** Human operator (Needle account access required)  
+**Unblocks:** T-EH-05 publish, Phase 1 gate, LinkedIn launch post, all revenue paths  
+**Instruction:** Log in to Needle → New Project → Name: "Entrepreneur Hub" → Save  
+**After:** Pass the project URL back to Amethyst to update NEEDLE_TEMPLATE_INDEX
 
 ---
 
-## Phase 2 — NOT STARTED
-*Unlocks after 2+ T-EH templates live and first revenue signal*
-
-- [ ] Pro Bundle packaging (3-template bundle, $49)
-- [ ] Needle Pro tier setup
-- [ ] Revenue target: $50/mo
-
-## Phase 3+ — NOT STARTED
-*Unlocks after $50/mo sustained*
-
-- [ ] Community tier ($99/mo)
-- [ ] Agency bundle ($499)
-- [ ] Revenue target: $500/mo
-
----
-
-## Governance Cadence
-
-| Cadence | Action | Owner | Next due |
-|---|---|---|---|
-| Weekly (Wed) | COLLEEN SWEEP | COLLEEN / GitHub Actions | 2026-07-01 |
-| Per-publish | Update NEEDLE_TEMPLATE_INDEX | Amethyst | On T-EH-05 publish |
-| Per-revenue event | Update AUDIT_TRAIL + MONETIZATION_FLYWHEEL | COLLEEN | On first sale |
-| Monthly | Phase gate review | Amethyst | 2026-07-25 |
+### 2. Publish T-EH-05 on Needle
+**Time:** ~15 min  
+**Who:** Human operator  
+**Blocked by:** Item 1 above  
+**Instruction:** 
+- Open `templates/governance-starter-pack/TEMPLATE.md`
+- Copy full content
+- Create new template in Needle project "Entrepreneur Hub"
+- Paste content, set title: "Entrepreneur's AI Governance Starter Pack"
+- Set tags: governance, AI, entrepreneur, DGAF, audit, startup
+- Publish
+- Copy the live URL → pass to Amethyst  
+**After:** Amethyst updates NEEDLE_TEMPLATE_INDEX + triggers LinkedIn post prep
 
 ---
 
-## Critical Path (Fastest Revenue)
+### 3. Create Gumroad Enterprise Starter Page
+**Time:** ~20 min  
+**Who:** Human operator  
+**Product name:** "AI Governance Enterprise Starter"
+**Price:** $199
+**Description:** See docs/GUMROAD_PRODUCT_SPEC.md  
+**After:** Update README inquiry CTA link from GitHub Issues to Gumroad URL. Pass URL to Amethyst.
 
+---
+
+## 🟡 HIGH — Do These After Blockers Clear
+
+### 4. Add Needle CTA to 6 Existing Governance Workflows
+**Time:** ~30 min  
+**Who:** Human operator  
+**CTA text to add (bottom of each workflow):**  
 ```
-Create Needle project (5 min)
-  -> Build T-EH-05 content (2-3 hrs)
-  -> Create Gumroad page (30 min)
-  -> Update README CTA with Gumroad URL (5 min)
-  -> Update 6 existing Needle workflows with repo CTA (30 min)
-  -> Publish LinkedIn post (10 min)
-  |
-First revenue possible: within 7 days of starting
+> Built with DGAF Framework — full AI governance toolkit for entrepreneurs  
+> → [Entrepreneur Hub on GitHub](https://github.com/ndrorchestration/entrepreneur-hub)
 ```
+**Impact:** Activates existing 11K view audience. Single highest-leverage traffic action.
+
+---
+
+### 5. Publish LinkedIn Launch Post
+**Time:** ~5 min  
+**Who:** Human operator  
+**Blocked by:** T-EH-05 live on Needle (need URL)  
+**File:** docs/LAUNCH_POST_LINKEDIN.md — post is drafted, replace `[Link to Needle template]` with live URL  
+**Target:** +500 views, ≥1 GitHub star, ≥1 Enterprise Starter inquiry
+
+---
+
+## ⬜ QUEUED — Phase 1 Completion
+
+- [ ] Publish T-EH-01 through T-EH-04 on Needle (after T-EH-05 is live)
+- [ ] Update NEEDLE_TEMPLATE_INDEX with all live URLs
+- [ ] Verify GitHub Actions sweep-reminder.yml fires on first Wednesday
+- [ ] Check GitHub Traffic → Referrers at Day 7 post-launch
+
+---
+
+## 🟢 DONE
+
+- [x] Phase 0 closed (2026-06-25)
+- [x] README rewritten as storefront (2026-06-25)
+- [x] T-EH-05 full content build — 6 files (2026-06-26)
+- [x] T-EH-01 content build (2026-06-26)
+- [x] T-EH-02 content build (2026-06-26)
+- [x] T-EH-03 content build (2026-06-26)
+- [x] T-EH-04 content build (2026-06-26)
+- [x] GitHub Actions SWEEP forcing function added (2026-06-25)
+- [x] LinkedIn launch post drafted (2026-06-26)
+- [x] Gumroad product spec written (2026-06-25)
+- [x] AUDIT_TRAIL schema v1.1 with funnel_source (2026-06-26)
+- [x] SWEEP-EH-002 completed (2026-06-25)
+- [x] SWEEP-EH-003 completed (2026-06-26)

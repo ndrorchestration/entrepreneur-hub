@@ -1,28 +1,31 @@
-# T-EH-04: AI Sprint Planner
 id: T-EH-04
-title: "AI-Assisted Sprint Planner"
-slug: ai-sprint-planner-entrepreneur
+title: "Solo AI Builder Sprint Planner"
+slug: solo-ai-builder-sprint-planner
 version: "1.0.0"
-status: draft
+status: pending-publish
 priority: P4
+build_completed: "2026-06-26"
 
 audience:
-  primary: "Solo founders and small AI teams running 1-2 week execution sprints"
+  primary: "Solo AI builders and indie founders"
+  secondary: "Small AI teams without formal sprint infrastructure"
 
 description: |
-  Sprint planning template optimized for solo AI builders. Includes backlog prioritization matrix,
-  daily check-in format, blocker escalation protocol, and DGAF-compatible decision log integration.
+  A 2-week sprint framework for solo AI builders.
+  Accounts for context-switching overhead, AI model reliability variability,
+  the architecture trap, and the forcing function to ship.
+  Includes sprint templates, daily log, mid-sprint review, and retro protocol.
 
-cta:
-  needle_cta_text: "Built with DGAF Framework — full AI governance toolkit for builders -> github.com/ndrorchestration/entrepreneur-hub"
-  pro_upsell: "Sprint coaching session -> Enterprise Starter $199"
+content_files:
+  - TEMPLATE.md
 
 needle:
   project: "Entrepreneur Hub"
   url: "(pending publish)"
-  tags: ["sprint", "planning", "solo-founder", "AI", "productivity"]
+  category: "Productivity"
+  tags: ["sprint", "AI", "solo", "builder", "agile", "productivity"]
 
-publish_checklist:
-  - "[ ] T-EH-05 live"
-  - "[ ] needle_cta_text included"
-  - "[ ] NEEDLE_TEMPLATE_INDEX updated"
+revenue_attribution:
+  tier: free-with-upsell
+  upsell_target: enterprise-starter-199
+  funnel_source: needle-template

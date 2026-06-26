@@ -1,29 +1,30 @@
-# T-EH-02: Marketplace Optimizer
 id: T-EH-02
-title: "AI Marketplace Optimizer"
-slug: ai-marketplace-optimizer
+title: "AI Template Marketplace Optimizer"
+slug: ai-template-marketplace-optimizer
 version: "1.0.0"
-status: draft
+status: pending-publish
 priority: P2
+build_completed: "2026-06-26"
 
 audience:
-  primary: "Entrepreneurs selling on Gumroad, Etsy, Substack, or API marketplaces"
+  primary: "AI template creators on Needle, Gumroad, or similar marketplaces"
+  secondary: "Founders with high-traffic free content and near-zero revenue"
 
 description: |
-  Framework for optimizing product listings, pricing tiers, and discovery on AI-enabled marketplaces.
-  Includes conversion analysis template, pricing tier decision tree, and keyword audit checklist.
+  Diagnostic and optimization system for AI template marketplace creators.
+  Covers audience fit, CTA presence, paid tier clarity, and cross-platform linkage.
+  Built from observed patterns in 11K+ view / near-zero revenue scenarios.
 
-cta:
-  needle_cta_text: "Built with DGAF Framework — full AI governance toolkit for builders -> github.com/ndrorchestration/entrepreneur-hub"
-  pro_upsell: "Marketplace audit session -> Enterprise Starter $199"
+content_files:
+  - TEMPLATE.md
 
 needle:
   project: "Entrepreneur Hub"
   url: "(pending publish)"
-  tags: ["marketplace", "Gumroad", "pricing", "conversion", "entrepreneur"]
+  category: "Marketplace"
+  tags: ["marketplace", "templates", "monetization", "Needle", "Gumroad", "conversion"]
 
-publish_checklist:
-  - "[ ] T-EH-05 live"
-  - "[ ] T-EH-01 live"
-  - "[ ] needle_cta_text included"
-  - "[ ] NEEDLE_TEMPLATE_INDEX updated"
+revenue_attribution:
+  tier: free-with-upsell
+  upsell_target: enterprise-starter-199
+  funnel_source: needle-template
