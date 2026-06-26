@@ -70,24 +70,6 @@ This hub packages the [DGAF Framework](https://github.com/ndrorchestration/DGAF-
 
 ---
 
-## The Flywheel
-
-```
-[Your governance workflow on Needle — 11K+ views]
-    → "Built with DGAF Framework — see full ecosystem on GitHub" CTA
-    → [This README — you are here]
-        → Enterprise Starter inquiry  →  Revenue event
-        → Pro bundle (Gumroad)        →  Revenue event
-        → DGAF-Framework star/fork    →  Distribution amplification
-    → COLLEEN logs to AUDIT_TRAIL.md
-    → Amethyst SWEEP → new template based on demand signal
-    → Loop
-```
-
-> **Current flywheel state:** CTA wiring from existing 6 Needle governance workflows to this README is the next activation step. T-EH-05 publication closes the loop.
-
----
-
 ## Governance Notice
 
 This repository is a **DGAF-governed artifact** under Pattern [P-34: Entrepreneur Hub Flywheel](https://github.com/ndrorchestration/DGAF-Framework/blob/main/docs/patterns/P-34-ENTREPRENEUR-HUB-FLYWHEEL.md).
@@ -97,4 +79,4 @@ This repository is a **DGAF-governed artifact** under Pattern [P-34: Entrepreneu
 - All artifacts versioned and traceable to policy
 - Phase 0 closed June 25, 2026. Phase 1 active.
 
-> Built by [Andrew // Ndr "Ender" Hensel](https://www.linkedin.com/in/andrewhensel) — AI Orchestration Engineer & Transversal
+> Built by [Andrew // Ndr "Ender" Hensel](https://www.linkedin.com/in/andrewhensel) — AI Orchestration Engineer & Agentic Governance Systems Architect.  Architexuralist 
