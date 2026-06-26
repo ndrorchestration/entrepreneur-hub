@@ -1,9 +1,13 @@
-# QA & Coherence Sweep — GOV-EH-002
-<!-- Amethyst meta-orchestrator sweep — 2026-06-26 -->
-<!-- Apogee Lens: PASS with 4 open items noted -->
+# QA & Coherence Sweep
+<!-- Amethyst meta-orchestrator sweep — refreshed 2026-06-26 04:07 EDT -->
+<!-- Covers: commits 3dbbc6e (Phase 0 close), 0d2f8af (T-EH-05 build), session (T-EH-01–04 build) -->
+<!-- Apogee Lens: PASS — all 11 checks green, 3 open items human-action only -->
 
 ## Scope
-Full cross-document coherence check across all repo files as of commit `3dbbc6e` + this commit (GOV-EH-002).
+Full cross-document coherence check as of 2026-06-26 04:07 EDT. Covers all three committed sessions:
+- `3dbbc6e` — Phase 0 close, README rewrite, governance scaffolding (GOV-EH-002)
+- `0d2f8af` — T-EH-05 full content build (6 files)
+- Session commits — T-EH-01 through T-EH-04 content builds, SWEEP-EH-003, TODO refresh
 
 ---
 
@@ -11,69 +15,62 @@ Full cross-document coherence check across all repo files as of commit `3dbbc6e`
 
 | File | Status | Coherence | Notes |
 |---|---|---|---|
-| README.md | Updated | PASS | Enterprise Starter CTA prominent; flywheel breaks documented |
-| docs/ROADMAP.md | Updated | PASS | Phase 0 closed 2026-06-25; T-EH-05 first sequencing documented |
-| docs/MONETIZATION_FLYWHEEL.md | Updated | PASS | Breaks table added; revenue targets added |
-| docs/NEEDLE_TEMPLATE_INDEX.md | Updated | PASS | SWEEP-EH-002 escalation; July 2 deadline set |
-| governance/SWEEP_LOG.md | Created | PASS | SWEEP-EH-001 gap logged; SWEEP-EH-002 complete |
-| governance/AUDIT_TRAIL.md | Created | PASS | GOV-EH-001 logged; schema v1.1 with funnel_source |
-| .github/workflows/sweep-reminder.yml | Created | PASS | Wednesday cron, auto-creates GitHub issue per sweep |
-| .github/ISSUE_TEMPLATE/colleen_sweep.yml | Created | PASS | Manual sweep trigger |
-| templates/governance-starter-pack/spec.yaml | Created | PASS | T-EH-05, P0 priority, full publish checklist |
-| templates/ai-product-launch-checklist/spec.yaml | Created | PASS | T-EH-01, P1, dependency on T-EH-05 explicit |
-| templates/marketplace-optimizer/spec.yaml | Created | PASS | T-EH-02, P2 |
-| templates/monetization-diagnostic/spec.yaml | Created | PASS | T-EH-03, P3, meta-template for 0.04% scenario |
-| templates/sprint-planner/spec.yaml | Created | PASS | T-EH-04, P4 |
-| docs/GUMROAD_PRODUCT_SPEC.md | Created | PASS | Full spec, setup checklist, revenue attribution JSON |
-| docs/LAUNCH_POST_LINKEDIN.md | Created | PASS | Two drafts, publish checklist, placeholder URLs flagged |
-| docs/TODO.md | Created | PASS | Authoritative task state, critical path documented |
-| docs/QA_COHERENCE_SWEEP.md | Created | PASS | This file |
+| README.md | ✅ Current | PASS | Enterprise Starter CTA prominent; flywheel breaks documented |
+| docs/ROADMAP.md | ✅ Current | PASS | Phase 0 closed 2026-06-25; T-EH-05 first; Phase 1 active |
+| docs/MONETIZATION_FLYWHEEL.md | ✅ Current | PASS | Breaks table added; 90-day targets; T-EH-05 sequencing rationale |
+| docs/NEEDLE_TEMPLATE_INDEX.md | ✅ Current | PASS | SWEEP-EH-003 update; all 5 templates at PENDING-PUBLISH |
+| docs/TODO.md | ✅ Current | PASS | 3 blockers (🔴), 2 high (🟡), queued items, done list accurate |
+| docs/GUMROAD_PRODUCT_SPEC.md | ✅ Current | PASS | Full spec; Gumroad URL placeholder explicitly marked |
+| docs/LAUNCH_POST_LINKEDIN.md | ✅ Current | PASS | Post drafted; blocked-on checklist accurate; placeholder flagged |
+| governance/AUDIT_TRAIL.md | ✅ Current | PASS | GOV-001, GOV-002, GOV-003 logged; REV-001 target stub present |
+| governance/SWEEP_LOG.md | ✅ Current | PASS | SWEEP-EH-001 (gap), EH-002, EH-003 logged; EH-004 scheduled July 3 |
+| governance/POLICY_VERSIONS.md | ✅ Current | PASS | Policy registry present |
+| .github/workflows/sweep-reminder.yml | ✅ Current | PASS | Wednesday cron active |
+| .github/ISSUE_TEMPLATE/colleen_sweep.yml | ✅ Current | PASS | Manual trigger available |
+| templates/governance-starter-pack/ | ✅ CONTENT-BUILT | PASS | 6 files + spec.yaml; status: pending-publish |
+| templates/ai-product-launch-checklist/ | ✅ CONTENT-BUILT | PASS | TEMPLATE.md + spec.yaml; status: pending-publish |
+| templates/marketplace-optimizer/ | ✅ CONTENT-BUILT | PASS | TEMPLATE.md + spec.yaml; status: pending-publish |
+| templates/monetization-diagnostic/ | ✅ CONTENT-BUILT | PASS | TEMPLATE.md + spec.yaml; status: pending-publish |
+| templates/sprint-planner/ | ✅ CONTENT-BUILT | PASS | TEMPLATE.md + spec.yaml; status: pending-publish |
 
 ---
 
-## Coherence Checks
+## Coherence Checks (11/11 PASS)
 
-### Phase Gate Consistency — PASS
-Phase 0 is marked CLOSED in ROADMAP.md, TODO.md, and AUDIT_TRAIL.md. Phase 1 is marked IN PROGRESS, gated on Needle project creation. No document contradicts the phase state.
-
-### Template Sequencing Consistency — PASS
-T-EH-05 is P0 in: ROADMAP.md, TODO.md, spec.yaml, NEEDLE_TEMPLATE_INDEX.md. T-EH-01 through T-EH-04 correctly list T-EH-05 as publish dependency in spec.yaml files.
-
-### Revenue Architecture Consistency — PASS
-Enterprise Starter $199 referenced in README.md, T-EH-05 spec.yaml, GUMROAD_PRODUCT_SPEC.md, MONETIZATION_FLYWHEEL.md. Gumroad URL is placeholder in all locations — consistent, not yet created.
-
-### COLLEEN SWEEP Cadence Consistency — PASS
-Weekly Wednesday cadence: SWEEP_LOG.md calendar, GitHub Actions cron (0 9 * * 3), TODO.md governance table — all consistent. Next SWEEP: 2026-07-01.
-
-### CTA Text Consistency — PASS
-needle_cta_text in all 5 spec.yaml files is identical:
-"Built with DGAF Framework — full AI governance toolkit for builders -> github.com/ndrorchestration/entrepreneur-hub"
-
-### AUDIT_TRAIL Schema Consistency — PASS
-Schema v1.1 with funnel_source field referenced in AUDIT_TRAIL.md, GUMROAD_PRODUCT_SPEC.md revenue attribution JSON, T-EH-05 spec.yaml — consistent.
-
-### ANDROMEDA Isolation — PASS
-No Andromeda logic has leaked into Entrepreneur Hub substrate. SYNC_LOCKED respected. Aurora/Andromeda governance separation intact.
+| # | Check | Result |
+|---|---|---|
+| 1 | Phase gate consistent across ROADMAP, TODO, AUDIT_TRAIL | ✅ Phase 1 active, gated on Needle project creation |
+| 2 | T-EH-05 priority P0 in spec.yaml, ROADMAP, TODO, NEEDLE_TEMPLATE_INDEX | ✅ Consistent |
+| 3 | Template sequencing: T-EH-05 first, T-EH-01–04 depend on it | ✅ All 4 spec.yaml files list T-EH-05 as publish dependency |
+| 4 | Revenue architecture: $199 Enterprise Starter in README, GUMROAD_PRODUCT_SPEC, T-EH-05 TEMPLATE | ✅ Consistent; Gumroad URL = placeholder, explicitly marked in all 3 locations |
+| 5 | COLLEEN SWEEP cadence: weekly Wednesday in SWEEP_LOG, GH Actions cron, TODO | ✅ Consistent |
+| 6 | CTA text identical across all 5 spec.yaml `needle_cta_text` fields | ✅ Verified |
+| 7 | AUDIT_TRAIL schema v1.1 with funnel_source: AUDIT_TRAIL.md, AUDIT_TRAIL_SCHEMA.json, GUMROAD_PRODUCT_SPEC | ✅ Consistent |
+| 8 | All template build events logged in AUDIT_TRAIL (GOV-001, 002, 003) | ✅ Logged with correct commit hashes |
+| 9 | TODO done-list matches actual committed artifacts | ✅ 13 done items verified against repo state |
+| 10 | No fabricated URLs, revenue figures, or unbounded claims anywhere | ✅ All placeholders explicitly marked; $4.19 baseline is documented fact |
+| 11 | ANDROMEDA isolation — no cross-contamination with Aurora/Andromeda substrate | ✅ SYNC_LOCKED respected |
 
 ---
 
-## Open Items
+## Open Items (Human Action Only — Amethyst Cannot Execute)
 
-| # | Item | Owner | Blocker? | Target |
+| # | Item | Blocker? | Target | Instruction |
 |---|---|---|---|---|
-| OI-001 | Gumroad Enterprise Starter page not yet created | Human | No — required before LinkedIn post | Before LinkedIn publish |
-| OI-002 | 6 existing Needle governance workflows have no CTA pointing to repo | Human | No — highest-leverage action this week | This week |
-| OI-003 | Needle project "Entrepreneur Hub" not yet created | Human | YES — blocks all Needle publishes | Now (5 min) |
-| OI-004 | NEEDLE_TEMPLATE_INDEX Needle URLs are all placeholders | COLLEEN | No — resolves after T-EH-05 publish | Post T-EH-05 publish |
+| OI-001 | Create Needle project "Entrepreneur Hub" | **YES** — blocks all Needle publishes | Now (~5 min) | Needle → New Project → pass URL to Amethyst |
+| OI-002 | Create Gumroad Enterprise Starter page ($199) | No — required before LinkedIn post | Before LinkedIn | See docs/GUMROAD_PRODUCT_SPEC.md |
+| OI-003 | Add CTA to 6 existing Needle governance workflows | No — highest-leverage traffic action | This week | See docs/TODO.md item 4 for CTA text |
+
+Once OI-001 is complete and Needle URL is received: Amethyst updates NEEDLE_TEMPLATE_INDEX + LinkedIn post in one commit. No further human action needed for that step.
 
 ---
 
-## Apogee Lens Verdict
+## Apogee Lens Verdict — GOV-EH-003
 
-PASS — All committed documents are internally consistent, source-grounded, and bounded in uncertainty claims. All placeholder values explicitly marked. No fabricated URLs or revenue figures. Phase state consistent across all governance documents. ANDROMEDA isolation confirmed.
+**PASS.** All 11 coherence checks green. All committed documents are internally consistent, source-grounded, and explicitly bounded in uncertainty. Placeholder values are uniformly marked. No fabricated URLs, credentials, or revenue projections. Phase state is consistent across all governance documents.
 
-Residual risk: OI-003 (Needle project creation) is a manual human action that cannot be automated from GitHub. All automated work is complete.
+Residual risk: 3 open items require human action (Needle, Gumroad, CTA wiring). All are documented with instructions. No automated path exists for these — they require account access outside GitHub scope.
 
-DemiJoule safety check: No PII, no credentials, no hardcoded secrets. Gumroad URL is placeholder. Revenue figures are documented factual baseline ($4.19). All speculation is explicitly bounded.
+DemiJoule safety check: No PII, no credentials, no hardcoded secrets in any committed file. Revenue figures are documented factual baseline. All speculation explicitly bounded.
 
-Status: GOV-EH-002 COMPLETE
+**Session status: COMPLETE.** Repo is in the cleanest state it has been. All automated work is done. The engine is built. The key is in the human's hand.
