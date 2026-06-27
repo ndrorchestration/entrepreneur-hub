@@ -6,6 +6,47 @@
 
 ---
 
+## SWEEP-EH-004
+**Date:** 2026-06-27  
+**Time:** 18:45 EDT  
+**Type:** full-repo-read + template-submission-sweep  
+**Duration:** ~60 min (T-EH-01–04 Needle submission session)  
+**Status:** issues-found → partially-remediated  
+**Authority:** COLLEEN-L5  
+**Triggered by:** Manual (Amethyst + human session)
+
+### Findings
+
+| # | Area | Finding | Status | Action |
+|---|---|---|---|---|
+| 1 | AUDIT_TRAIL | GOV-004 not logged | 🔴 UNRESOLVED | Logged GOV-004 ✅ |
+| 2 | AUDIT_TRAIL | IP risk event not logged | 🟡 NEW | Logged GOV-005 (IP risk flag) ✅ |
+| 3 | Needle Partner Hub | T-EH-01–04 in Pending review | 🟡 EXPECTED | No action — Needle review cadence (1–5 days) |
+| 4 | Needle Partner Hub | T-EH-05 not submitted | 🔴 BLOCKED | Blocked on OI-001 (Needle project creation) — human action required |
+| 5 | Gumroad | Enterprise Starter page missing | 🔴 OPEN | OI-002 — human action required (~20 min) |
+| 6 | 12 Needle workflows | Zero CTAs on all workflows | 🔴 OPEN | OI-003 — unblocked after OI-001 clears |
+| 7 | docs/LAUNCH_POST_LINKEDIN.md | Post drafted, not published | 🟡 BLOCKED | OI-004 — blocked on OI-001 + T-EH-05 live URL |
+| 8 | IP exposure | 5 public IP risk areas identified | 🔴 NEW | GOV-005 logged; human decision required on remediation |
+| 9 | DGAF expansion string | T-EH prompts use FLAG-13 losing variant | 🟡 WARN | Needle-side artifact — correct when re-editing workflows |
+
+### Remediated This Session
+- ✅ GOV-004 logged (T-EH-01–04 Needle submission record)
+- ✅ GOV-005 logged (IP risk flag — new governance event class)
+- ✅ SWEEP-EH-004 recorded in SWEEP_LOG
+
+### Open Items (human action required)
+1. **OI-001** — Create Needle project "Entrepreneur Hub" (~5 min) → unblocks T-EH-05, OI-003, OI-004
+2. **OI-002** — Create Gumroad Enterprise Starter page ($199, per GUMROAD_PRODUCT_SPEC.md) (~20 min) → opens revenue path
+3. **OI-003** — Add CTA block to all 12 Needle workflow descriptions (~30 min) → unlocks ~$6,500+/mo projected conversion
+4. **IP review** — Review GOV-005 recommendations; decide on GUMROAD_PRODUCT_SPEC.md visibility and license alignment
+
+### Next SWEEP
+**Scheduled:** July 3, 2026  
+**Manual trigger condition:** After OI-001 (Needle project) and OI-002 (Gumroad) clear  
+**Expected state at SWEEP-EH-005:** T-EH-05 live, CTAs added, LinkedIn post published, REV-001 progress
+
+---
+
 ## SWEEP-EH-003
 **Date:** 2026-06-26  
 **Time:** 02:15 EDT  
@@ -27,16 +68,7 @@
 | 7 | Needle | No Needle project created yet | 🔴 UNRESOLVED | Manual action required — out-of-band for Amethyst |
 | 8 | Gumroad | No Enterprise Starter product page | 🔴 UNRESOLVED | Manual action required — out-of-band for Amethyst |
 
-### Summary
-6 findings remediated in this session. 2 findings requiring manual human action remain open.
-
-### Open Items (human action required)
-1. **Create Needle project "Entrepreneur Hub"** — ~5 min. Unblocks T-EH-05 publish.
-2. **Create Gumroad Enterprise Starter page ($199)** — ~20 min. Unblocks revenue conversion path.
-
-### Next SWEEP
-**Scheduled:** July 3, 2026  
-**Trigger:** GitHub Actions cron issue (auto-created Wednesday)
+**Summary:** 6 findings remediated. 2 manual actions remain open.
 
 ---
 
@@ -75,6 +107,6 @@
 
 | SWEEP | Scheduled Date | Status |
 |---|---|---|
-| SWEEP-EH-004 | 2026-07-03 | scheduled (GH Actions) |
-| SWEEP-EH-005 | 2026-07-10 | scheduled |
-| SWEEP-EH-006 | 2026-07-17 | scheduled |
+| SWEEP-EH-005 | 2026-07-03 | scheduled (GH Actions) |
+| SWEEP-EH-006 | 2026-07-10 | scheduled |
+| SWEEP-EH-007 | 2026-07-17 | scheduled |
