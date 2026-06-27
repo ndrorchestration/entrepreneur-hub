@@ -1,9 +1,12 @@
 # LinkedIn Launch Post — T-EH-05
 
-**Status:** draft — publish after Needle template goes live  
+**Status:** READY TO PUBLISH — awaiting T-EH-05 Needle approval + public URL  
 **Target:** +500 views, governance/AI-builder audience  
 **CTA:** Needle template link → GitHub repo  
-**Pattern ref:** P-34 Flywheel (Loop A activation)
+**Pattern ref:** P-34 Flywheel (Loop A activation)  
+**Needle Workflow ID:** `wfl_01KW34KJY3A6MJFKN67WJ3SE9G`  
+**Dashboard URL:** https://needle.app/dashboard/workflows/wfl_01KW34KJY3A6MJFKN67WJ3SE9G  
+**Public URL:** TBD — insert once Needle approves and publishes template
 
 ---
 
@@ -31,7 +34,7 @@ Built on the DGAF Framework — the same system I use to run my own AI publishin
 
 Free to use. Enterprise implementation support available ($199 — 1hr async consult, you get a specific remediation plan for your repo).
 
-**→ [Link to Needle template]**
+**→ [INSERT PUBLIC NEEDLE URL AFTER APPROVAL]**
 
 Full ecosystem on GitHub: github.com/ndrorchestration/entrepreneur-hub
 
@@ -44,14 +47,14 @@ Full ecosystem on GitHub: github.com/ndrorchestration/entrepreneur-hub
 ## Post Notes
 
 - **Lead with the number:** 11K views / $4.19 revenue is arresting — it earns the scroll
-- **Audience:** Same governance-interested readers already hitting Needle templates. Don't target founders generally — target AI builders specifically
+- **Audience:** Governance-interested readers already hitting Needle templates. Don’t target founders generally — target AI builders specifically
 - **CTA sequencing:** Free template first (low friction), then $199 (self-select). Don't lead with paid
-- **Timing:** Publish within 24hr of Needle template going live — maximum recency signal
+- **Timing:** Publish within 24hr of Needle template approval — maximum recency signal
 - **Hashtags:** #AIGovernance #Entrepreneurship #DGAF #BuildInPublic #AIFounders
 - **Expected outcome:** +500 Needle views in 7 days, ≥1 GitHub star, ≥1 Enterprise Starter inquiry
 
 ## Blocked On
 
-- [ ] Needle template live (get URL)
-- [ ] Replace `[Link to Needle template]` with actual URL
+- [ ] Needle approval of T-EH-05 (wfl_01KW34KJY3A6MJFKN67WJ3SE9G) — awaiting
+- [ ] Replace `[INSERT PUBLIC NEEDLE URL AFTER APPROVAL]` with live public URL
 - [ ] Publish

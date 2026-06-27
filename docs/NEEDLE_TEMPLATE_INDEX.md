@@ -2,9 +2,9 @@
 ## Entrepreneur Hub — Needle Publishing Index
 
 ```
-Version:     v2.1
-Last sweep:  2026-06-27 (SWEEP-EH-004 — Amethyst × COLLEEN)
-Status:      12 governance workflows LIVE · T-EH-05 LIVE-READY · T-EH-01–04 PENDING-REVIEW
+Version:     v2.2
+Last sweep:  2026-06-27 (SWEEP-EH-004 close-out — all 5 templates submitted)
+Status:      12 governance workflows LIVE · All 5 T-EH PENDING-REVIEW
 Authority:   COLLEEN (registry steward)
 ```
 
@@ -12,17 +12,17 @@ Authority:   COLLEEN (registry steward)
 
 ## Section 1 — T-EH Template Suite (Needle Projects)
 
-| ID | Template Name | Needle Status | GitHub Spec | Priority |
-|---|---|---|---|---|
-| T-EH-05 | **Entrepreneur's AI Governance Starter Pack** | 🟡 **LIVE-READY** — publish next (blocked on OI-001) | [spec](../templates/governance-starter-pack/spec.yaml) | **#1 — publish first** |
-| T-EH-01 | AI Product Launch Readiness Checker | 🔄 **PENDING-REVIEW** (Needle queue) | [spec](../templates/ai-product-launch-checklist/) | #2 |
-| T-EH-02 | AI Template Marketplace Optimizer | 🔄 **PENDING-REVIEW** (Needle queue) | [spec](../templates/marketplace-optimizer/) | #3 |
-| T-EH-03 | Monetization Diagnostic for AI Tools | 🔄 **PENDING-REVIEW** (Needle queue — syntax fix applied 2026-06-27) | [spec](../templates/monetization-diagnostic/) | #4 |
-| T-EH-04 | Solo AI Builder Sprint Planner | 🔄 **PENDING-REVIEW** (Needle queue) | [spec](../templates/sprint-planner/) | #5 |
+| ID | Template Name | Needle Status | Needle Workflow ID | Needle URL | Priority |
+|---|---|---|---|---|---|
+| T-EH-05 | **Entrepreneur's AI Governance Starter Pack** | 🔄 **PENDING-REVIEW** | `wfl_01KW34KJY3A6MJFKN67WJ3SE9G` | [dashboard link](https://needle.app/dashboard/workflows/wfl_01KW34KJY3A6MJFKN67WJ3SE9G) | **#1 — Phase 1 anchor** |
+| T-EH-01 | AI Product Launch Readiness Checker | 🔄 **PENDING-REVIEW** | `wfl_01KW5FJQRTZPS2PFPYR499JRA4` | [dashboard link](https://needle.app/dashboard/workflows/wfl_01KW5FJQRTZPS2PFPYR499JRA4) | #2 |
+| T-EH-02 | AI Template Marketplace Optimizer | 🔄 **PENDING-REVIEW** | `wfl_01KW5FSAF05RSAPRYQKD7CHMEZ` | [dashboard link](https://needle.app/dashboard/workflows/wfl_01KW5FSAF05RSAPRYQKD7CHMEZ) | #3 |
+| T-EH-03 | Monetization Diagnostic for AI Tools | 🔄 **PENDING-REVIEW** | `wfl_01KW5GRY7EA4GJ9WKZMF2F95D3` | [dashboard link](https://needle.app/dashboard/workflows/wfl_01KW5GRY7EA4GJ9WKZMF2F95D3) | #4 |
+| T-EH-04 | Solo AI Builder Sprint Planner | 🔄 **PENDING-REVIEW** | `wfl_01KW5GF5GBGEPQ39J2YF4REJ2X` | [dashboard link](https://needle.app/dashboard/workflows/wfl_01KW5GF5GBGEPQ39J2YF4REJ2X) | #5 |
 
-**Publish T-EH-05 first** — it converts the existing governance-curious audience (11K+ views on governance workflows) directly into the Entrepreneur Hub funnel. T-EH-01 targets a new audience; T-EH-05 matches who's already showing up.
+**Status key:** 🔄 PENDING-REVIEW = submitted to Needle Partner Hub, awaiting approval (1–5 business days). ✅ LIVE = publicly discoverable on Needle.
 
-**Status key:** 🟡 LIVE-READY = content complete, awaiting Needle project. 🔄 PENDING-REVIEW = submitted to Needle Partner Hub, awaiting approval (1–5 business days). ✅ LIVE = publicly discoverable on Needle.
+> Once any template is approved, update its status to ✅ LIVE and add the public-facing URL (not the dashboard URL).
 
 ---
 
@@ -56,7 +56,7 @@ These 12 workflows are live on Needle and generating traffic. **None currently l
 
 ## Section 3 — CTA Copy (Add to Each Workflow Description)
 
-Paste this block at the **top** of every workflow's Needle description page:
+Paste this block at the **top** of every workflow’s Needle description page:
 
 ```
 ---
@@ -81,11 +81,13 @@ Paste this block at the **top** of every workflow's Needle description page:
 | Phase 0 | Needle: Create Entrepreneur Hub project | ✅ CLOSED 2026-06-25 |
 | Phase 0 | GitHub: entrepreneur-hub repo scaffolded | ✅ CLOSED |
 | Phase 0 | README as storefront live | ✅ CLOSED |
-| Phase 1 | T-EH-05 published on Needle | 🟡 NEXT — blocked on OI-001 (~5 min human action) |
-| Phase 1 | T-EH-01–04 live on Needle | 🔄 PENDING-REVIEW (Needle queue, 1–5 days) |
+| Phase 1 | Needle “Entrepreneur Hub” project created | ✅ CLOSED 2026-06-27 |
+| Phase 1 | T-EH-05 submitted to Needle | ✅ CLOSED 2026-06-27 · `wfl_01KW34KJY3A6MJFKN67WJ3SE9G` |
+| Phase 1 | T-EH-01–04 submitted to Needle | ✅ CLOSED 2026-06-27 · all 4 PENDING-REVIEW |
+| Phase 1 | All 5 T-EH live on Needle (approved) | 🔄 PENDING — Needle review queue (1–5 days) |
 | Phase 1 | CTA added to 12 workflow descriptions | 🔴 OPEN — ~24 min human action |
 | Phase 1 | Gumroad Enterprise Starter ($199) live | 🔴 OPEN — ~20 min human action |
-| Phase 1 | LinkedIn launch post published | 🔴 BLOCKED — on T-EH-05 live URL |
+| Phase 1 | LinkedIn launch post published | 🟡 READY — awaiting T-EH-05 public URL post-approval |
 
 ---
 
@@ -95,7 +97,8 @@ Paste this block at the **top** of every workflow's Needle description page:
 |---|---|---|---|---|
 | S070 | 2026-06-27 | T-EH-05 LIVE-READY · T-EH-01–04 Phase 1 | 0/12 | Index created |
 | SWEEP-EH-004 | 2026-06-27 | T-EH-01–04 PENDING-REVIEW · T-EH-05 LIVE-READY | 0/12 | Submission confirmed; status updated |
+| SWEEP-EH-004 close | 2026-06-27 | All 5 T-EH PENDING-REVIEW · Needle IDs registered | 0/12 | OI-001 cleared; GOV-006 logged; Needle IDs recorded |
 
 ---
 
-*NEEDLE_TEMPLATE_INDEX.md v2.1 · 2026-06-27 · COLLEEN × Amethyst · SWEEP-EH-004*
+*NEEDLE_TEMPLATE_INDEX.md v2.2 · 2026-06-27 · COLLEEN × Amethyst · SWEEP-EH-004 close-out*
