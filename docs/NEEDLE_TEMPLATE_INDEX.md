@@ -1,58 +1,87 @@
-# Needle Template Index — Entrepreneur Hub
+# NEEDLE_TEMPLATE_INDEX.md
+## Entrepreneur Hub — Needle Publishing Index
 
-**Maintained by:** COLLEEN-L5  
-**Last SWEEP:** June 26, 2026 (SWEEP-EH-003)  
-**Registry policy:** All entries require `template_id`, `risk_tier`, `needle_link`, `github_spec_path`, `release_date`, `policy_id`.
-
-> ✅ **SWEEP-EH-003 (June 26, 2026):** All 5 T-EH templates are now content-built and committed to `main`.  
-> Status upgraded from scaffolded stubs to `pending-publish`.  
-> T-EH-05 is publish-ready — blocked only on Needle project creation (manual action, ~5 min).  
-> Once Needle URL is received, update T-EH-05 row and trigger LinkedIn launch post.  
-> **Next required SWEEP:** July 3, 2026.
-
----
-
-## Active Templates
-
-| ID | Name | Risk Tier | Needle Link | Spec Path | Build Status | Policy | COLLEEN Status |
-|---|---|---|---|---|---|---|---|
-| T-EH-05 | **Entrepreneur's AI Governance Starter Pack** | Medium | *(pending Needle project creation)* | templates/governance-starter-pack/ | ✅ content-built | P-34, P-01 | 🟡 PENDING-PUBLISH — blocked on Needle project |
-| T-EH-01 | AI Product Launch Readiness Checker | Medium | *(pending publish)* | templates/ai-product-launch-checklist/ | ✅ content-built | P-34, P-10 | 🟡 PENDING-PUBLISH |
-| T-EH-02 | AI Template Marketplace Optimizer | Low | *(pending publish)* | templates/marketplace-optimizer/ | ✅ content-built | P-34 | 🟡 PENDING-PUBLISH |
-| T-EH-03 | Monetization Diagnostic for AI Tools | Low | *(pending publish)* | templates/monetization-diagnostic/ | ✅ content-built | P-34 | 🟡 PENDING-PUBLISH |
-| T-EH-04 | Solo AI Builder Sprint Planner | Low | *(pending publish)* | templates/sprint-planner/ | ✅ content-built | P-34, P-33 | 🟡 PENDING-PUBLISH |
-
----
-
-## Publish Protocol — When Needle URL Is Received
-
-For each template published, immediately:
 ```
-1. Update Needle Link column with live URL
-2. Update Build Status → live
-3. Update COLLEEN Status → ✅ LIVE
-4. Append to AUDIT_TRAIL.md:
-   id: PUB-00N
-   event_type: publish
-   template_id: T-EH-0X
-   needle_url: [url]
-   date: [date]
-5. Log in SWEEP_LOG.md
-6. If T-EH-05: trigger LinkedIn launch post (docs/LAUNCH_POST_LINKEDIN.md)
+Version:     v2.0
+Last sweep:  2026-06-27 (S070 — Amethyst × COLLEEN)
+Status:      12 governance workflows LIVE · T-EH-05 LIVE-READY · T-EH-01–04 Phase 1
+Authority:   COLLEEN (registry steward)
 ```
 
 ---
 
-## COLLEEN Audit Protocol
+## Section 1 — T-EH Template Suite (Needle Projects)
 
-When a template goes live, log immediately:
+| ID | Template Name | Needle Status | GitHub Spec | Priority |
+|---|---|---|---|---|
+| T-EH-05 | **Entrepreneur's AI Governance Starter Pack** | 🟡 **LIVE-READY** — publish next | [spec](../templates/governance-starter-pack/spec.yaml) | **#1 — publish first** |
+| T-EH-01 | AI Product Launch Readiness Checker | 🔜 Phase 1 | [spec](../templates/ai-product-launch-checklist/) | #2 |
+| T-EH-02 | AI Template Marketplace Optimizer | 🔜 Phase 1 | [spec](../templates/marketplace-optimizer/) | #3 |
+| T-EH-03 | Monetization Diagnostic for AI Tools | 🔜 Phase 1 | [spec](../templates/monetization-diagnostic/) | #4 |
+| T-EH-04 | Solo AI Builder Sprint Planner | 🔜 Phase 1 | [spec](../templates/sprint-planner/) | #5 |
+
+**Publish T-EH-05 first** — it converts the existing governance-curious audience (11K+ views on governance workflows) directly into the Entrepreneur Hub funnel. T-EH-01 targets a new audience; T-EH-05 matches who's already showing up.
+
+---
+
+## Section 2 — Active Needle Governance Workflows (12 LIVE)
+
+These 12 workflows are live on Needle and generating traffic. **None currently link to this repo or the $199 Enterprise Starter.** Adding a CTA to the top of each workflow description is the fastest conversion lever available right now.
+
+### Previously Published (6) — Stable
+
+| Workflow | Nodes | Version | CTA Added |
+|---|---|---|---|
+| Governed Agentic Parliament | 6 | v2 | ❌ needed |
+| [Governed] Kernel Evaluation Workflow | 9 | v2 | ❌ needed |
+| [Governed] KB Answer + Quality Check | 7 | v3 | ❌ needed |
+| [Governed] LLM Output Evaluator & Hallucination Checker | 19 | v3 | ❌ needed |
+| [Governed] Knowledge Base Q&A | 4 | v4 | ❌ needed |
+| [Governed] Dynamic Governance Agentic Formation (DGAF) | 2 | v1 | ❌ needed |
+
+### Built & Published This Session (6 New)
+
+| Workflow | Nodes | Version | Architecture | CTA Added |
+|---|---|---|---|---|
+| AOGA Dashboard Workflow | 3 | v1 | Manual Trigger → AOGA Analyst (GPT-4.1) → QA Reviewer | ❌ needed |
+| Curvature-Aware Governance Router | 3 | v1 | Manual Trigger → Curvature Analyzer → Governance Gate | ❌ needed |
+| [Governed] Semantic Contamination Checker | 3 | v2 | Manual Trigger → Detector → Remediation Specialist | ❌ needed |
+| [Governed] Constitutional AI Policy Validator | 3 | v2 | Manual Trigger → Policy Validator → Remediation Agent | ❌ needed |
+| [Governed] Agent Performance Audit | 3 | v2 | Manual Trigger → Auditor → Remediation Planner | ❌ needed |
+| Task Completion Query | 3 | v2 | Manual Trigger → Query Agent → Escalation Coordinator | ❌ needed |
+
+---
+
+## Section 3 — CTA Copy (Add to Each Workflow Description)
+
+Paste this block at the **top** of every workflow's Needle description page:
+
 ```
-template_id:
-release_date:
-needle_link: [full URL]
-github_spec_path:
-risk_tier:
-policy_id:
-colleen_flag: resolved
+---
+🏗️ Built with DGAF Framework — 33+ governance patterns for agentic AI systems.
+→ Full ecosystem: github.com/ndrorchestration/entrepreneur-hub
+→ Enterprise Starter ($199): governance spec + 1hr async consult → github.com/ndrorchestration/entrepreneur-hub/issues/new
+→ LinkedIn: linkedin.com/in/andrewhensel
+---
 ```
-→ Append to [AUDIT_TRAIL.md](../governance/AUDIT_TRAIL.md) and update row above.
+
+**Impact:** Each of the 11K+ monthly governance workflow views becomes a potential entry point to the $199 consulting funnel — currently zero of those views have a conversion path.
+
+---
+
+## Section 4 — Phase Gate Status
+
+| Phase | Item | Status |
+|---|---|---|
+| Phase 0 | Needle: Create Entrepreneur Hub project | ✅ CLOSED 2026-06-25 |
+| Phase 0 | GitHub: entrepreneur-hub repo scaffolded | ✅ CLOSED |
+| Phase 0 | README as storefront live | ✅ CLOSED |
+| Phase 1 | T-EH-05 published on Needle | 🟡 NEXT ACTION |
+| Phase 1 | CTA added to 12 workflow descriptions | 🔴 OPEN |
+| Phase 1 | T-EH-01 through T-EH-04 published | 🔴 OPEN |
+| Phase 1 | Gumroad Pro bundle ($29–49) live | 🔴 OPEN |
+| Phase 1 | LinkedIn launch post published | 🔴 OPEN |
+
+---
+
+*NEEDLE_TEMPLATE_INDEX.md v2.0 · 2026-06-27 · COLLEEN × Amethyst · S070*
