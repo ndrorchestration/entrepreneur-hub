@@ -2,8 +2,9 @@
 ## All 12 Active Needle Governance Workflows
 
 ```
-Version:     v1.0
+Version:     v1.1
 Created:     2026-06-27 (S070)
+Updated:     2026-06-27 (SWEEP-EH-004)
 Authority:   COLLEEN (registry steward)
 Status:      12/12 workflows LIVE and published
 ```
@@ -44,7 +45,7 @@ Status:      12/12 workflows LIVE and published
 
 ## CTA Action Required
 
-Add this block to the **top** of every workflow's Needle description:
+Add this block to the **top** of every workflow’s Needle description:
 
 ```
 ---
@@ -56,6 +57,8 @@ Add this block to the **top** of every workflow's Needle description:
 ---
 ```
 
+> ⚠️ Once Gumroad is live (OI-002), replace the `issues/new` link with the Gumroad product URL across all 12 workflows.
+
 **This is the highest-leverage action available.** 11K+ monthly views have zero conversion path today. Each workflow description update takes ~2 minutes. Total time: ~24 minutes for all 12.
 
 ---
@@ -64,8 +67,9 @@ Add this block to the **top** of every workflow's Needle description:
 
 | Sweep Date | Workflows Live | CTA Coverage | Notes |
 |---|---|---|---|
-| 2026-06-27 | 12/12 | 0/12 | Registry created S070 · CTA campaign pending |
+| 2026-06-27 (S070) | 12/12 | 0/12 | Registry created S070 · CTA campaign pending |
+| 2026-06-27 (SWEEP-EH-004) | 12/12 | 0/12 | CTA block confirmed canonical · Gumroad URL note added · human action required to apply CTAs |
 
 ---
 
-*NEEDLE_WORKFLOW_REGISTRY.md v1.0 · 2026-06-27 · COLLEEN × Amethyst · S070*
+*NEEDLE_WORKFLOW_REGISTRY.md v1.1 · 2026-06-27 · COLLEEN × Amethyst · SWEEP-EH-004*
