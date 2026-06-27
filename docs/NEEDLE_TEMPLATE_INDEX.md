@@ -2,9 +2,9 @@
 ## Entrepreneur Hub — Needle Publishing Index
 
 ```
-Version:     v2.0
-Last sweep:  2026-06-27 (S070 — Amethyst × COLLEEN)
-Status:      12 governance workflows LIVE · T-EH-05 LIVE-READY · T-EH-01–04 Phase 1
+Version:     v2.1
+Last sweep:  2026-06-27 (SWEEP-EH-004 — Amethyst × COLLEEN)
+Status:      12 governance workflows LIVE · T-EH-05 LIVE-READY · T-EH-01–04 PENDING-REVIEW
 Authority:   COLLEEN (registry steward)
 ```
 
@@ -14,13 +14,15 @@ Authority:   COLLEEN (registry steward)
 
 | ID | Template Name | Needle Status | GitHub Spec | Priority |
 |---|---|---|---|---|
-| T-EH-05 | **Entrepreneur's AI Governance Starter Pack** | 🟡 **LIVE-READY** — publish next | [spec](../templates/governance-starter-pack/spec.yaml) | **#1 — publish first** |
-| T-EH-01 | AI Product Launch Readiness Checker | 🔜 Phase 1 | [spec](../templates/ai-product-launch-checklist/) | #2 |
-| T-EH-02 | AI Template Marketplace Optimizer | 🔜 Phase 1 | [spec](../templates/marketplace-optimizer/) | #3 |
-| T-EH-03 | Monetization Diagnostic for AI Tools | 🔜 Phase 1 | [spec](../templates/monetization-diagnostic/) | #4 |
-| T-EH-04 | Solo AI Builder Sprint Planner | 🔜 Phase 1 | [spec](../templates/sprint-planner/) | #5 |
+| T-EH-05 | **Entrepreneur's AI Governance Starter Pack** | 🟡 **LIVE-READY** — publish next (blocked on OI-001) | [spec](../templates/governance-starter-pack/spec.yaml) | **#1 — publish first** |
+| T-EH-01 | AI Product Launch Readiness Checker | 🔄 **PENDING-REVIEW** (Needle queue) | [spec](../templates/ai-product-launch-checklist/) | #2 |
+| T-EH-02 | AI Template Marketplace Optimizer | 🔄 **PENDING-REVIEW** (Needle queue) | [spec](../templates/marketplace-optimizer/) | #3 |
+| T-EH-03 | Monetization Diagnostic for AI Tools | 🔄 **PENDING-REVIEW** (Needle queue — syntax fix applied 2026-06-27) | [spec](../templates/monetization-diagnostic/) | #4 |
+| T-EH-04 | Solo AI Builder Sprint Planner | 🔄 **PENDING-REVIEW** (Needle queue) | [spec](../templates/sprint-planner/) | #5 |
 
 **Publish T-EH-05 first** — it converts the existing governance-curious audience (11K+ views on governance workflows) directly into the Entrepreneur Hub funnel. T-EH-01 targets a new audience; T-EH-05 matches who's already showing up.
+
+**Status key:** 🟡 LIVE-READY = content complete, awaiting Needle project. 🔄 PENDING-REVIEW = submitted to Needle Partner Hub, awaiting approval (1–5 business days). ✅ LIVE = publicly discoverable on Needle.
 
 ---
 
@@ -60,10 +62,13 @@ Paste this block at the **top** of every workflow's Needle description page:
 ---
 🏗️ Built with DGAF Framework — 33+ governance patterns for agentic AI systems.
 → Full ecosystem: github.com/ndrorchestration/entrepreneur-hub
-→ Enterprise Starter ($199): governance spec + 1hr async consult → github.com/ndrorchestration/entrepreneur-hub/issues/new
+→ Enterprise Starter ($199): governance spec + 1hr async consult
+   → github.com/ndrorchestration/entrepreneur-hub/issues/new
 → LinkedIn: linkedin.com/in/andrewhensel
 ---
 ```
+
+> ⚠️ Once Gumroad is live (OI-002), replace the `issues/new` link with the Gumroad product URL across all 12 workflows.
 
 **Impact:** Each of the 11K+ monthly governance workflow views becomes a potential entry point to the $199 consulting funnel — currently zero of those views have a conversion path.
 
@@ -76,12 +81,21 @@ Paste this block at the **top** of every workflow's Needle description page:
 | Phase 0 | Needle: Create Entrepreneur Hub project | ✅ CLOSED 2026-06-25 |
 | Phase 0 | GitHub: entrepreneur-hub repo scaffolded | ✅ CLOSED |
 | Phase 0 | README as storefront live | ✅ CLOSED |
-| Phase 1 | T-EH-05 published on Needle | 🟡 NEXT ACTION |
-| Phase 1 | CTA added to 12 workflow descriptions | 🔴 OPEN |
-| Phase 1 | T-EH-01 through T-EH-04 published | 🔴 OPEN |
-| Phase 1 | Gumroad Pro bundle ($29–49) live | 🔴 OPEN |
-| Phase 1 | LinkedIn launch post published | 🔴 OPEN |
+| Phase 1 | T-EH-05 published on Needle | 🟡 NEXT — blocked on OI-001 (~5 min human action) |
+| Phase 1 | T-EH-01–04 live on Needle | 🔄 PENDING-REVIEW (Needle queue, 1–5 days) |
+| Phase 1 | CTA added to 12 workflow descriptions | 🔴 OPEN — ~24 min human action |
+| Phase 1 | Gumroad Enterprise Starter ($199) live | 🔴 OPEN — ~20 min human action |
+| Phase 1 | LinkedIn launch post published | 🔴 BLOCKED — on T-EH-05 live URL |
 
 ---
 
-*NEEDLE_TEMPLATE_INDEX.md v2.0 · 2026-06-27 · COLLEEN × Amethyst · S070*
+## Section 5 — COLLEEN SWEEP Log (this file)
+
+| Sweep | Date | T-EH Status | CTA Coverage | Notes |
+|---|---|---|---|---|
+| S070 | 2026-06-27 | T-EH-05 LIVE-READY · T-EH-01–04 Phase 1 | 0/12 | Index created |
+| SWEEP-EH-004 | 2026-06-27 | T-EH-01–04 PENDING-REVIEW · T-EH-05 LIVE-READY | 0/12 | Submission confirmed; status updated |
+
+---
+
+*NEEDLE_TEMPLATE_INDEX.md v2.1 · 2026-06-27 · COLLEEN × Amethyst · SWEEP-EH-004*
