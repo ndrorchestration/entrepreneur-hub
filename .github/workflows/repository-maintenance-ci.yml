@@ -1,0 +1,29 @@
+name: Repository Maintenance CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify-maintenance-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify stale scheduled authority workflow is retired
+        shell: bash
+        run: |
+          set -euo pipefail
+          file=.github/workflows/sweep-reminder.yml
+          test -f "$file"
+          grep -q 'workflow_dispatch:' "$file"
+          ! grep -Eq '^  schedule:' "$file"
+          ! grep -q 'Agent Amethyst' "$file"
+          ! grep -q 'COLLEEN' "$file"
+          ! grep -q 'NDR-STASIS' "$file"
+          ! grep -q 'enterprise-ready' "$file"
+          grep -q 'does not confer governance authority, certification, readiness, or evidence status' "$file"
