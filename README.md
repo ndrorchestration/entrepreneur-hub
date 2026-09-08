@@ -2,15 +2,15 @@
 
 > AI governance template and commercialization track for builders. Project-defined governance mappings and template claims require evidence appropriate to the specific artifact.
 
-[![DGAF-Governed](https://img.shields.io/badge/DGAF-Governed-6a0dad)](https://github.com/ndrorchestration/DGAF-Framework)
+[![DGAF Pattern Mapping](https://img.shields.io/badge/DGAF-Pattern%20Mapped-6a0dad)](https://github.com/ndrorchestration/DGAF-Framework)
 [![Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)
 [![NIST AI RMF](https://img.shields.io/badge/NIST-AI%20RMF%20Mapped-green)](docs/ENTREPRENEUR_PATTERNS.md)
-[![COLLEEN Registry](https://img.shields.io/badge/COLLEEN-Registry%20Active-purple)](governance/SWEEP_LOG.md)
+[![Project Registry](https://img.shields.io/badge/Project-Registry%20Tracked-purple)](governance/SWEEP_LOG.md)
 [![Phase 1 Active](https://img.shields.io/badge/Phase%201-Active-yellow)](docs/ROADMAP.md)
 
-Meta-orchestrated by **Agent Amethyst** (project-local architecture/QA role) and **Agent COLLEEN** (project-local registry/continuity role).
+Historical project architecture uses **Amethyst** for an architecture/QA role and **COLLEEN** for registry/continuity terminology. These names describe project-local workflow lineage; they do not confer autonomous authority, certification, compliance, or evidence status.
 
-**Evidence boundary:** DGAF governance, NIST AI RMF references, “audit-ready” language, and template quality claims describe project mappings/design intent unless the specific artifact has reproducible evidence demonstrating the applicable requirement.
+**Evidence boundary:** DGAF references, NIST AI RMF mappings, “audit-ready” language, and template quality claims describe project mappings/design intent unless the specific artifact has reproducible evidence demonstrating the applicable requirement.
 
 ---
 
@@ -62,14 +62,15 @@ Historical Needle analytics remain historical unless independently re-establishe
 
 Pricing is a project/business plan and does not imply that any listed service constitutes third-party certification.
 
-## Governance Notice
+## Project Governance Mapping
 
-This repository is a **DGAF-governed project artifact** under Pattern [P-34: Entrepreneur Hub Flywheel](https://github.com/ndrorchestration/DGAF-Framework/blob/main/docs/patterns/P-34-ENTREPRENEUR-HUB-FLYWHEEL.md).
+This repository is associated with the project-local Pattern [P-34: Entrepreneur Hub Flywheel](https://github.com/ndrorchestration/DGAF-Framework/blob/main/docs/patterns/P-34-ENTREPRENEUR-HUB-FLYWHEEL.md).
 
-- **COLLEEN** maintains the project registry and audit trail — [SWEEP_LOG.md](governance/SWEEP_LOG.md)
-- **Amethyst** is the project-local architecture/QA role
+- `governance/SWEEP_LOG.md` records project registry/continuity activity
+- **Amethyst** and **COLLEEN** labels are retained as historical/project-local architecture terminology, not independent authorities
 - Artifacts are versioned and traceable to project policy where implemented
 - Phase 0 closed June 25, 2026; Phase 1 status should be checked against the current roadmap and repository state
+- Relationship to DGAF does not transfer scientific evidence, authorization, validation, or certification from DGAF into this repository or its customer deliverables
 
 ## Evidence Standard
 
