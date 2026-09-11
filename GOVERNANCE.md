@@ -1,37 +1,57 @@
 # Governance Notice — Entrepreneur Hub
 
 **Status:** Active  
-**Pattern:** P-34 — Entrepreneur Hub Flywheel  
-**DGAF Framework ref:** [github.com/ndrorchestration/DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework)  
-**Amethyst Directive:** AX-EH-001  
-**COLLEEN Registry Entry:** June 16, 2026  
+**Project pattern mapping:** P-34 — Entrepreneur Hub Flywheel  
+**DGAF reference:** [github.com/ndrorchestration/DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework)  
+**Historical directive label:** AX-EH-001  
+**Historical continuity entry:** June 16, 2026  
 
 ---
 
-## Artifact Classification
+## Current authority
 
-All files in this repository are classified as **DGAF-governed commercialization artifacts** and must conform to:
+Current repository state is governed by repository-local source, versioned templates, CI/maintenance evidence, dated commercial evidence where available, and explicit maintainer decisions.
 
-- P-01 (AXIS alignment) — all templates must declare a risk tier
-- P-33 (SWEEP_LOG) — all releases must be logged before publication
-- P-34 (Entrepreneur Hub Flywheel) — cross-platform CTA integrity required
+`Amethyst`, `COLLEEN`, DGAF protocol labels, and P-34 describe historical/project-local workflow lineage or pattern mappings. They do **not** autonomously propose, validate, ratify, govern, certify, or confer evidence status on this repository or its customer deliverables.
 
-## Handoff Protocol
+## Artifact classification
 
-1. Amethyst proposes new template or structural change
-2. COLLEEN validates memory + registry conformance
-3. Amethyst ratifies
-4. Ender ships
+Files in this repository are **project-local commercialization and governance-template artifacts**. Where they reference DGAF or external frameworks, those references are mappings or design inputs unless a specific evidence chain establishes more.
 
-## NIST AI RMF Mapping
+Current repository rules:
 
-| Function | Implementation |
+- templates that make risk-tier claims should declare the applicable risk tier;
+- releases and meaningful commercial changes should be recorded in repository history or an explicit project log;
+- calls-to-action and commercial claims should resolve to current destinations and current evidence;
+- historical phase, protocol, persona, or registry labels must not be presented as current external authority;
+- no template or service may be described as certified, compliant, audit-ready, enterprise-ready, or independently validated solely because a mapping exists.
+
+## Human-controlled handoff
+
+1. A maintainer or contributor proposes a template or structural change.
+2. The change is checked against current repository requirements and available evidence.
+3. Claims that depend on external standards, deployments, revenue, or platform analytics are verified from current evidence or explicitly bounded as targets/mappings.
+4. The repository owner approves and ships the change.
+
+Historical Amethyst/COLLEEN handoff terminology is retained as provenance vocabulary only.
+
+## NIST AI RMF mapping boundary
+
+The repository may map artifacts to NIST AI RMF functions. A mapping is **not certification or proof of implementation**.
+
+| Function | Project mapping / intended workflow |
 |---|---|
-| GOVERN | Hub enforces governance tagging on all published templates |
-| MAP | Tracks template-to-revenue linkage via AUDIT_TRAIL.md |
-| MEASURE | Monitors views → runs → conversions in AOGA Dashboard |
-| MANAGE | COLLEEN maintains registry; Amethyst audits on each SWEEP |
+| GOVERN | Templates may include project-defined governance/risk tagging. |
+| MAP | Project records may connect templates to use cases, distribution, or commercial context. |
+| MEASURE | Metrics may be recorded when an actual current data source and evidence chain exist. |
+| MANAGE | Human maintainers review repository state, claims, and maintenance records. |
+
+Any stronger claim requires evidence for the specific artifact and deployment context.
+
+## Cross-repository boundary
+
+DGAF, AOGA, Needle, or other ecosystem references do not transfer scientific evidence, authorization, runtime state, validation, certification, revenue, or compliance status into Entrepreneur Hub.
 
 ## License
 
-Apache 2.0 — consistent with DGAF-Framework. See [LICENSE](LICENSE).
+Apache 2.0. See [LICENSE](LICENSE). License alignment with another repository does not imply shared authority or validation.

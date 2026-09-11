@@ -27,3 +27,18 @@ jobs:
           ! grep -q 'NDR-STASIS' "$file"
           ! grep -q 'enterprise-ready' "$file"
           grep -q 'does not confer governance authority, certification, readiness, or evidence status' "$file"
+
+      - name: Verify current-facing governance is repository-local
+        shell: bash
+        run: |
+          set -euo pipefail
+          file=GOVERNANCE.md
+          test -f "$file"
+          grep -q '^## Current authority$' "$file"
+          grep -q 'repository-local source' "$file"
+          grep -q 'Historical Amethyst/COLLEEN handoff terminology is retained as provenance vocabulary only.' "$file"
+          ! grep -q 'DGAF-governed commercialization artifacts' "$file"
+          ! grep -q 'Amethyst proposes new template or structural change' "$file"
+          ! grep -q 'COLLEEN validates memory + registry conformance' "$file"
+          ! grep -q 'Amethyst ratifies' "$file"
+          ! grep -q 'COLLEEN maintains registry; Amethyst audits on each SWEEP' "$file"
