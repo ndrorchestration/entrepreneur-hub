@@ -10,7 +10,7 @@
 
 Historical project architecture uses **Amethyst** for an architecture/QA role and **COLLEEN** for registry/continuity terminology. These names describe project-local workflow lineage; they do not confer autonomous authority, certification, compliance, or evidence status.
 
-**Evidence boundary:** DGAF references, NIST AI RMF mappings, “audit-ready” language, and template quality claims describe project mappings/design intent unless the specific artifact has reproducible evidence demonstrating the applicable requirement.
+**Evidence boundary:** References to the Agentic Governance Orchestrator (proposed successor name for DGAF), NIST AI RMF mappings, “audit-ready” language, and template quality claims describe project mappings/design intent unless the specific artifact has reproducible evidence demonstrating the applicable requirement.
 
 ---
 
@@ -22,7 +22,7 @@ The proposed package includes:
 - AI governance specification for the customer's product
 - Risk register initialized with the customer's use cases
 - Evaluation checklist mapped to the deployment context
-- DGAF pattern mapping where applicable
+- Pattern mapping to the Agentic Governance Orchestrator (DGAF lineage) where applicable
 - 1hr async consultation — written responses to architecture/compliance questions
 
 → **[Open a consulting inquiry](https://github.com/ndrorchestration/entrepreneur-hub/issues/new?template=template-request.md)** or contact via [LinkedIn](https://www.linkedin.com/in/andrewhensel)
@@ -70,7 +70,7 @@ This repository is associated with the project-local Pattern [P-34: Entrepreneur
 - **Amethyst** and **COLLEEN** labels are retained as historical/project-local architecture terminology, not independent authorities
 - Artifacts are versioned and traceable to project policy where implemented
 - Phase 0 closed June 25, 2026; Phase 1 status should be checked against the current roadmap and repository state
-- Relationship to DGAF does not transfer scientific evidence, authorization, validation, or certification from DGAF into this repository or its customer deliverables
+- Relationship to the Agentic Governance Orchestrator (DGAF lineage) does not transfer scientific evidence, authorization, validation, or certification into this repository or its customer deliverables
 
 ## Evidence Standard
 
